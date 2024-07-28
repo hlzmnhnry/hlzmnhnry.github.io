@@ -59,7 +59,7 @@ defaults:
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
 title: "hlzmnhnry" # Site name or title
-logo: "/assets/logo.svg" # Site logo
+logo: "/assets/mylogo.svg" # Site logo
 # favicon: "/favicon.ico" # Uncomment to add custom favicon, or leave as is to use site logo
 description: "Personal space for collecting ideas about various topics" # Site description and default description
 url: "https://hlzmnhnry.github.io" # Site url

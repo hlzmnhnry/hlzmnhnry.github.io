@@ -36,7 +36,17 @@ body {
 
 .header {
   @include flex(0, 0, auto);
-  background: darken($backgroundColour, 10%);
+  background: $bannerColour;
+}
+
+.header > a {
+  
+  color: $backgroundColour;
+
+  &:hover, &:active, &:focus {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 .logo {
@@ -111,7 +121,7 @@ body {
   }
   &--current {
     a {
-      color: desaturate($linkColour, 100%);
+      color: desaturate(#fff, 100%);
     }
   }
 }

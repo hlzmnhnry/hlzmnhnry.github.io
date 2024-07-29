@@ -122,10 +122,20 @@ body {
   h2 {
     a {
       color: $linkColour;
+      &:hover,
+      &:active,
+      &:focus {
+        color: #372554;
+      }
     }
   }
   a {
     color: $backgroundColour;
+    &:hover,
+    &:active,
+    &:focus {
+      color: #372554;
+    }
   }
   &--current {
     a {

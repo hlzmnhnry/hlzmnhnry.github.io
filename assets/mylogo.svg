@@ -76,6 +76,12 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="svg8"
      inkscape:document-rotation="0" />
+  <circle
+     style="fill:#89abe3;fill-opacity:1;stroke-width:1.88976;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:5.66929, 1.88976;stroke-dashoffset:8.12598"
+     id="path16"
+     cx="21"
+     cy="21"
+     r="19" />
   <g
      fill="none"
      fill-rule="evenodd"
@@ -86,14 +92,14 @@
        id="rect4" />
   </g>
   <g
-     transform="matrix(2.1477588,-0.07500138,0.07500138,2.1477588,-18.24774,-18.014778)"
+     transform="matrix(1.6654528,-0.05815889,0.05815889,1.6654528,-9.4341706,-9.2535232)"
      id="g15"
-     style="stroke-width:1.03404">
+     style="stroke-width:1.33349">
     <path
        d="m 13,20 a 5,3.75 0 0 0 10,0"
        fill="#000000"
        id="path9"
-       style="fill:#ffffff;stroke-width:1.9696" />
+       style="fill:#ffffff;stroke-width:2.53999" />
     <rect
        x="12"
        y="14"
@@ -103,7 +109,7 @@
        stroke="none"
        fill="#000000"
        id="rect11"
-       style="fill:#ffffff;stroke-width:1.9696" />
+       style="fill:#ffffff;stroke-width:2.53999" />
     <rect
        x="22"
        y="14"
@@ -113,6 +119,6 @@
        stroke="none"
        fill="#000000"
        id="rect13"
-       style="fill:#ffffff;stroke-width:1.9696" />
+       style="fill:#ffffff;stroke-width:2.53999" />
   </g>
 </svg>

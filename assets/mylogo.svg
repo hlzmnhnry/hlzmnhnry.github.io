@@ -101,24 +101,24 @@
        id="path9"
        style="fill:#ffffff;stroke-width:2.53999" />
     <rect
-       x="12"
-       y="14"
-       width="1.5"
-       height="2"
-       rx="1"
+       x="12.838284"
+       y="13.4465"
+       width="2.9988456"
+       height="3.9984608"
+       rx="1.9992304"
        stroke="none"
        fill="#000000"
        id="rect11"
-       style="fill:#ffffff;stroke-width:2.53999" />
+       style="fill:#ffffff;stroke-width:2.53998" />
     <rect
-       x="22"
-       y="14"
-       width="1.5"
-       height="2"
-       rx="1"
+       x="20.24037"
+       y="13.396399"
+       width="2.9988456"
+       height="3.9984608"
+       rx="1.9992304"
        stroke="none"
        fill="#000000"
        id="rect13"
-       style="fill:#ffffff;stroke-width:2.53999" />
+       style="fill:#ffffff;stroke-width:2.53998" />
   </g>
 </svg>

@@ -119,9 +119,12 @@ body {
       margin-left: 0;
     }
   }
+  a {
+    color: $backgroundColour;
+  }
   &--current {
     a {
-      color: desaturate(#fff, 100%);
+      color: #aaa;
     }
   }
 }

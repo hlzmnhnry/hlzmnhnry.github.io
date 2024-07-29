@@ -85,26 +85,15 @@
        height="42"
        id="rect4" />
   </g>
-  <rect
-     x="-12.027958"
-     y="20.112196"
-     width="30.799999"
-     height="30.799999"
-     transform="rotate(-38)"
-     fill="#f0ab3d"
-     rx="30.799999"
-     id="rect7"
-     style="stroke-width:4.65609"
-     mask="url(#mask31)" />
   <g
-     transform="matrix(0.77730398,-0.02714405,0.02714405,0.77730398,4.9643799,11.38601)"
+     transform="matrix(2.1477588,-0.07500138,0.07500138,2.1477588,-18.24774,-18.014778)"
      id="g15"
-     style="stroke-width:2.85714">
+     style="stroke-width:1.03404">
     <path
        d="m 13,20 a 5,3.75 0 0 0 10,0"
        fill="#000000"
        id="path9"
-       style="stroke-width:5.44218" />
+       style="fill:#ffffff;stroke-width:1.9696" />
     <rect
        x="12"
        y="14"
@@ -114,7 +103,7 @@
        stroke="none"
        fill="#000000"
        id="rect11"
-       style="stroke-width:5.44218" />
+       style="fill:#ffffff;stroke-width:1.9696" />
     <rect
        x="22"
        y="14"
@@ -124,6 +113,6 @@
        stroke="none"
        fill="#000000"
        id="rect13"
-       style="stroke-width:5.44218" />
+       style="fill:#ffffff;stroke-width:1.9696" />
   </g>
 </svg>

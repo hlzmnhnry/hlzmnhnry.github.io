@@ -11,4 +11,6 @@ Inertial measurement units (IMUs) are used in many SLAM procedures. In most case
 
 ## IMU measurement model
 
-TODO.
+<p>If sensors were error-free, this would make many things in robotics (and beyond) easier. But as is also the case with other sensors, IMU measurements are subject to errors. A distinction can be made between systematic errors and random noise. The **bias** is a systematic error that leads to a constant or slowly changing offset of the measured values. **White noise**, on the other hand, has no systematic tendency and is mainly caused by thermal noise and other random electronic fluctuations within the sensor circuit. White noise leads to a spread of the measured values around the true value, resulting in unsharp or noisy signal output. Taking the bias and white noise into account, accelerometer, and gyroscope measurements can be modeled as follows:</p>
+
+<p>\[\tilde{a}(t)_a = a(t)_a - R_{aw}(t) \cdot g_w +b_a^a(t) + \eta_a^a(t) \]</p>

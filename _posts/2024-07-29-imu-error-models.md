@@ -53,12 +53,11 @@ Inertial measurement units (IMUs) are used in many SLAM procedures. In most case
 
 <p>To determine all IMU noise parameters commonly used in SLAM methods (i.e., ARW, VRW and RRW) the <a href="https://en.wikipedia.org/wiki/Allan_variance">Allan variance</a> can be used. In order not to exceed the scope of this article, the Allan variance will be discussed in detail in a future article.</p>
 
-
 ## Further reading and sources
 
 1. <a href="https://github.com/ethz-asl/kalibr/wiki/IMU-Noise-Model">https://github.com/ethz-asl/kalibr/wiki/IMU-Noise-Model</a>
 2. <a href="https://stanford.edu/class/ee267/lectures/lecture9.pdf">https://stanford.edu/class/ee267/lectures/lecture9.pdf</a>
-3. <a href="https://www.tangramvision.com/blog/stochastic-imu-error-modeling#angular-random-walk-and-velocity-random-walk">https://www.tangramvision.com/blog/stochastic-imu-error-modeling#angular-random-walk-and-velocity-random-walk</a>
+3. <a href="https://www.tangramvision.com/blog/stochastic-imu-error-modeling">https://www.tangramvision.com/blog/stochastic-imu-error-modeling</a>
 4. <a href="https://github.com/ori-drs/allan_variance_ros">https://github.com/ori-drs/allan_variance_ros</a>
 5. <a href="https://upcommons.upc.edu/bitstream/handle/2117/103849/MScLeslieB.pdf?sequence=1&isAllowed=y">https://upcommons.upc.edu/bitstream/handle/2117/103849/MScLeslieB.pdf?sequence=1&isAllowed=y</a>
 6. <a href="https://nitinjsanket.github.io/tutorials/attitudeest/kf">https://nitinjsanket.github.io/tutorials/attitudeest/kf</a>

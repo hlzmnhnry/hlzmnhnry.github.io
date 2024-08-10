@@ -39,7 +39,7 @@ collections:
   posts:
     title: Blog # Needed for Siteleaf
     output: true
-    description: "A place for collecting ideas"
+    description: "A place where I gather ideas and concepts for myself. Hopefully, some posts might be interesting for you as well."
 
 # 6. Jekyll collections settings
 defaults:

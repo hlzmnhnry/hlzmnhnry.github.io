@@ -25,17 +25,17 @@ Inertial measurement units (IMUs) are used in many SLAM procedures. In most case
 
 <p>Starting with the bias, it might seem confusing to model the bias as time-dependent, since it can be considered as a constant offset. Then the bias would be modeled by a constant \(b(t) = b_0\) (<b>constant bias error</b>). However, the bias also has a dynamic component: the random walk of the bias, described by the <b>rate random walk (RRW)</b>. Then the bias becomes:</p>
 
-<p>\[b(t + \Delta t) = b(t) + \eta_b(t), \qquad \eta_b(t) \sim \mathcal{N}(\bm{0},\,\Sigma_b)\]</p>
+<p>\[b(t + \Delta t) = b(t) + \eta_b(t), \quad \eta_b(t) \sim \mathcal{N}(\bm{0},\,\Sigma_b)\]</p>
 
-<p>Here, \(\Sigma_b\) is a diagonal covariance matrix with \(\sigma_{b,x}^2, \sigma_{b,y}^2, \sigma_{b,z}^2\) on its diagonal. \(\sigma_{b,x}, \sigma_{b,y}, \sigma_{b,z}\) are the standard deviations of the bias random walk for all three Cartesian axes. The RRW describes the small random changes (or drift) of the bias and is often called <b>brown noise term</b>. Considering the evolution of the bias, the value to be subtracted from the measurement can change over time. If this development is neglected, an offset is integrated over time, and the integrated pose estimate drifts. The RRW is specified in the unit \(\frac{rad}{sec^2} \cdot \frac{1}{\sqrt{Hz}} = \frac{rad}{sec^{1.5}}\) for gyroscopes and in \(\frac{m}{sec^3} \cdot \frac{1}{\sqrt{Hz}} = \frac{m}{sec^{2.5}}\) for accelerometers. In tools like <a href="https://github.com/ethz-asl/kalibr/wiki/IMU-Noise-Model">kalibr</a> the RRW affecting the bias is called <i>gyroscope_random_walk</i> and <i>accelerometer_random_walk</i>, respectively. In kalibr and many SLAM applications, only one standard deviation is provided for the bias random walk (and other noise quantities). This is done to simplify the model further by assuming the noise to be similar along all axes. This can be achieved, for instance, by taking the mean value of all standard deviations. </p>
+<p>Here, \(\Sigma_b\) is a diagonal covariance matrix with \(\sigma_{b,x}^2, \sigma_{b,y}^2, \sigma_{b,z}^2\) on its diagonal. \(\sigma_{b,x}, \sigma_{b,y}, \sigma_{b,z}\) are the standard deviations of the bias random walk for all three Cartesian axes. The RRW describes the small random changes (or drift) of the bias and is often called <b>brown noise term</b>. Considering the evolution of the bias, the value to be subtracted from the measurement can change over time. If this development is neglected, an offset is integrated over time, and the integrated pose estimate drifts. The RRW is specified in the unit \(\frac{rad}{sec^2} \cdot \frac{1}{\sqrt{Hz}} = \frac{rad}{sec^{1.5}}\) for gyroscopes and in \(\frac{m}{sec^3} \cdot \frac{1}{\sqrt{Hz}} = \frac{m}{sec^{2.5}}\) for accelerometers. In tools like <a href="https://github.com/ethz-asl/kalibr/wiki/IMU-Noise-Model">Kalibr</a> the RRW affecting the bias is called <i>gyroscope random walk</i> and <i>accelerometer random walk</i>, respectively. In Kalibr and many SLAM applications, only one standard deviation is provided for the bias random walk (and other noise quantities). This is done to simplify the model further by assuming the noise to be similar along all axes. This can be achieved, for instance, by taking the mean value of all standard deviations. </p>
 
 ## White noise
 
 <p>In addition to the bias, the white noise (\(\eta_a^a(t)\), \(\eta_g^g(t)\)) is to be considered. This is not a systematic error but is assumed to be random noise. The sensor output signal is perturbed by a type of thermo-mechanical noise fluctuating at a higher rate than the sample rate of the sensor, called <b>angle/velocity random walk (ARW/VRW)</b>. So, these are not (slowly changing) constants that need to be substracted from the measurements, but random quantities. They are modeled as Gaussian distributions with zero mean:</p> 
 
-<p>\[\eta_a^a(t) \sim \mathcal{N}(\bm{0},\,\Sigma_a^2), \qquad \eta_g^g(t) \sim \mathcal{N}(\bm{0},\,\Sigma_g^2)\]</p>
+<p>\[\eta_a^a(t) \sim \mathcal{N}(\bm{0},\,\Sigma_a^2), \quad \eta_g^g(t) \sim \mathcal{N}(\bm{0},\,\Sigma_g^2)\]</p>
 
-<p>The ARW and VRW are specified in \(\frac{rad}{sec} \cdot \frac{1}{\sqrt{Hz}} = \frac{rad}{sec^{0.5}}\) for gyroscopes and in \(\frac{m}{sec^2} \cdot \frac{1}{\sqrt{Hz}} = \frac{m}{sec^{1.5}}\) for accelerometers. Derived from their naming conventions, these quantities cause random deviations in angle or velocity when they are integrated over time. In <a href="https://github.com/ethz-asl/kalibr/wiki/IMU-Noise-Model">kalibr</a> the ARW and VRW are called <i>gyroscope_noise_density</i> and <i>accelerometer_noise_density</i>.</p>
+<p>The ARW and VRW are specified in \(\frac{rad}{sec} \cdot \frac{1}{\sqrt{Hz}} = \frac{rad}{sec^{0.5}}\) for gyroscopes and in \(\frac{m}{sec^2} \cdot \frac{1}{\sqrt{Hz}} = \frac{m}{sec^{1.5}}\) for accelerometers. Derived from their naming conventions, these quantities cause random deviations in angle or velocity when they are integrated over time. In <a href="https://github.com/ethz-asl/kalibr/wiki/IMU-Noise-Model">Kalibr</a> the ARW and VRW are called <i>gyroscope noise density</i> and <i>accelerometer noise density</i>.</p>
 
 ## Power Spectral Density of noise
 
@@ -47,7 +47,7 @@ Inertial measurement units (IMUs) are used in many SLAM procedures. In most case
 
 <p>\[S_\eta(f) = N^2 + \frac{B^2}{2 \pi f} + \frac{K^2}{(2 \pi f)^2} \]</p>
 
-<p>It can be assumed that these frequency components are statistically independent. Therefore, the noise signal \(\eta(t)\) can be modeled to consist of white (\(N\)), brown \(B\) and pink (\(K\)) noise:</p>
+<p>It can be assumed that these frequency components are statistically independent. Therefore, the noise signal \(\eta(t)\) can be modeled to consist of white (\(N\)), brown (\(B\)) and pink (\(K\)) noise:</p>
 
 <p>\[ \eta(t) = \eta_N(t) + \eta_B(t) + \eta_K(t) \]</p>
 
@@ -59,6 +59,6 @@ Inertial measurement units (IMUs) are used in many SLAM procedures. In most case
 2. <a href="https://stanford.edu/class/ee267/lectures/lecture9.pdf">https://stanford.edu/class/ee267/lectures/lecture9.pdf</a>
 3. <a href="https://www.tangramvision.com/blog/stochastic-imu-error-modeling">https://www.tangramvision.com/blog/stochastic-imu-error-modeling</a>
 4. <a href="https://github.com/ori-drs/allan_variance_ros">https://github.com/ori-drs/allan_variance_ros</a>
-5. <a href="https://upcommons.upc.edu/bitstream/handle/2117/103849/MScLeslieB.pdf?sequence=1&isAllowed=y">https://upcommons.upc.edu/bitstream/handle/2117/103849/MScLeslieB.pdf?sequence=1&isAllowed=y</a>
+5. <a href="https://upcommons.upc.edu/bitstream/handle/2117/103849/MScLeslieB.pdf?sequence=1&isAllowed=y">Characterization of Errors and Noises in MEMS Inertial Sensors Using Allan Variance Method</a>
 6. <a href="https://nitinjsanket.github.io/tutorials/attitudeest/kf">https://nitinjsanket.github.io/tutorials/attitudeest/kf</a>
 7. <a href="https://de.mathworks.com/help/nav/ug/inertial-sensor-noise-analysis-using-allan-variance.html">https://de.mathworks.com/help/nav/ug/inertial-sensor-noise-analysis-using-allan-variance.html</a>

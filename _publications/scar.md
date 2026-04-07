@@ -11,11 +11,11 @@ SCAR (Satellite Imagery-Based Calibration for Aerial Recordings) is a framework 
 
 <img src="/assets/scar_teaser.png">
 
-<span class="conference_badge">Accepted at CVPR Workshop (VOCVALC) 2026</span>
-
 SCAR leverages georeferenced satellite imagery and elevation data to establish large-scale 2D–3D correspondences and refines both camera intrinsics and camera–INS extrinsics directly from flight data.
 
 Unlike traditional calibration procedures, SCAR operates without dedicated calibration targets or specific motion patterns, enabling continuous calibration during real-world deployments.
+
+<span class="conference_badge">Accepted at CVPR Workshop (VOCVALC) 2026</span>
 
 ## Resources
 

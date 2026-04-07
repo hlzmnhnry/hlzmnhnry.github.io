@@ -39,7 +39,12 @@ collections:
   posts:
     title: Blog # Needed for Siteleaf
     output: true
-    description: "A place where I gather ideas and concepts for myself. Hopefully, some posts might be interesting for you as well."
+    description: "A place where I gather ideas and concepts."
+  publications:
+    title: Publications
+    output: true
+    permalink: /publications/:name
+    description: "Papers and other published work."
 
 # 6. Jekyll collections settings
 defaults:
@@ -55,6 +60,12 @@ defaults:
       type: posts
     values:
       layout: post # Default layout
+  -
+    scope:
+      path: ""
+      type: publications
+    values:
+      layout: post # Default layout for publications
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right

@@ -39,7 +39,7 @@ collections:
   posts:
     title: Blog # Needed for Siteleaf
     output: true
-    description: "A place where I gather ideas and concepts."
+    description: "A place for documenting ideas, concepts, and technical explorations."
   publications:
     title: Publications
     output: true

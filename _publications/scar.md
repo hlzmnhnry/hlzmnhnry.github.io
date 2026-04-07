@@ -1,9 +1,11 @@
 ---
-title: "SCAR: Satellite-Based Calibration for Aerial Systems"
+title: "SCAR"
 date: 2026-04-07
 category: Paper
 image: /assets/images/scar_teaser.png
 ---
+
+<img src="/assets/scar_teaser.png">
 
 SCAR (Satellite Imagery-Based Calibration for Aerial Recordings) is a framework for long-term calibration refinement of aerial visual-inertial systems.
 
@@ -15,6 +17,8 @@ Unlike traditional calibration procedures, SCAR operates without dedicated calib
 
 ## Resources
 
-- <img src="/assets/icons/arxiv.svg" class="resource_icon"> [arxiv.org/abs/2602.16349](https://arxiv.org/abs/2602.16349)
-- <img src="/assets/icons/github.svg" class="resource_icon"> [github.com/hlzmnhnry/scar](https://github.com/hlzmnhnry/scar)
-- <img src="/assets/icons/owncloud.svg" class="resource_icon"> [owncloud.fraunhofer.de/Cf7U6xfx5YHMRSs](https://owncloud.fraunhofer.de/index.php/s/Cf7U6xfx5YHMRSs)
+<ul class="resource_list">
+  <li class="arxiv"><a href="https://arxiv.org/abs/2602.16349">arxiv.org/abs/2602.16349</a></li>
+  <li class="github"><a href="https://github.com/hlzmnhnry/scar">github.com/hlzmnhnry/scar</a></li>
+  <li class="owncloud"><a href="https://owncloud.fraunhofer.de/index.php/s/Cf7U6xfx5YHMRSs">owncloud.fraunhofer.de/Cf7U6xfx5YHMRSs</a></li>
+</ul>

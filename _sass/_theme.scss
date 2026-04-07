@@ -60,10 +60,38 @@ body {
   }
 }
 
-.resource_icon {
+.resource_list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.resource_list li {
+  padding-left: 26px;
+  position: relative;
+  margin: 6px 0;
+}
+
+.resource_list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
   width: 16px;
-  vertical-align: -2px;
-  margin-right: 6px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.resource_list li.arxiv::before {
+  background-image: url('/assets/icons/arxiv.svg');
+}
+
+.resource_list li.github::before {
+  background-image: url('/assets/icons/github.svg');
+}
+
+.resource_list li.owncloud::before {
+  background-image: url('/assets/icons/owncloud.svg');
 }
 
 .small {

@@ -86,6 +86,96 @@ body {
   margin-bottom: 10px;
 }
 
+.download_campaign {
+  border: 1px solid lighten($bodyColour, 55%);
+  border-radius: 6px;
+  background: lighten($backgroundColour, 1%);
+  margin: .7rem 0;
+  overflow: hidden;
+}
+
+.download_campaign[open] {
+  border-color: lighten($linkColour, 8%);
+  box-shadow: 0 2px 10px rgba($bodyColour, .08);
+}
+
+.download_campaign summary {
+  position: relative;
+  display: block;
+  padding: .55rem 2.4rem .55rem .8rem;
+  background: darken($backgroundColour, 3%);
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.download_campaign summary::-webkit-details-marker {
+  display: none;
+}
+
+.download_campaign summary::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: .85rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid lighten($bodyColour, 45%);
+  border-radius: 50%;
+  color: $headingColour;
+  line-height: 1.15rem;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.download_campaign summary:hover,
+.download_campaign summary:focus {
+  background: darken($backgroundColour, 5%);
+  color: $headingColour;
+}
+
+.download_campaign summary:focus {
+  outline: 2px solid lighten($linkColour, 10%);
+  outline-offset: -2px;
+}
+
+.download_campaign[open] summary {
+  border-bottom: 1px solid lighten($bodyColour, 58%);
+}
+
+.download_campaign[open] summary::after {
+  content: "-";
+  border-color: lighten($linkColour, 8%);
+  color: darken($linkColour, 25%);
+}
+
+.download_campaign > p,
+.download_campaign > h3,
+.download_campaign > ul,
+.download_campaign > pre {
+  margin-left: .9rem;
+  margin-right: .9rem;
+}
+
+.download_list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.download_list li {
+  border-bottom: 1px solid lighten($bodyColour, 62%);
+  padding: .25rem 0;
+  overflow-wrap: anywhere;
+}
+
+.download_list li:last-child {
+  border-bottom: 0;
+}
+
+.file_size {
+  color: $captionColour;
+  white-space: nowrap;
+}
+
 .small {
   padding-top: .6rem;
   color: $captionColour;

@@ -23,6 +23,7 @@ To understand and work with our dataset, we provide the following resources:
 
 <ul class="resource_list">
   <li><img src="/assets/icons/github.svg" class="resource_icon"> <a href="https://github.com/hlzmnhnry/pygeon">github.com/hlzmnhnry/pygeon</a></li>
+  <li><img src="/assets/icons/arxiv.svg" class="resource_icon"> <em>Coming soon</em></li>
 </ul>
 
 ## Dataset Download
@@ -39,6 +40,7 @@ The dataset is organized into the following flight campaigns:
 </ul>
 
 In addition, global metadata are provided under a shared `meta` folder.
+The expected local dataset layout is documented in the <a href="https://github.com/hlzmnhnry/pygeon/blob/main/data/README.md">data README</a>.
 For large downloads, we recommend using the AWS CLI.
 But individual download links are provided on the bottom of the page.
 

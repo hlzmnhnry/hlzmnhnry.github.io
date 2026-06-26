@@ -3,7 +3,7 @@ title: "SCAR"
 date: 2026-04-07
 category: Paper
 image: /assets/scar_teaser.png
------------------------------
+---
 
 SCAR (Satellite Imagery-Based Calibration for Aerial Recordings) is a framework for long-term calibration refinement of aerial visual-inertial systems.
 

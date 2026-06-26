@@ -1,5 +1,4 @@
 ---
-
 title: "Leaving the City"
 date: 2026-06-26
 category: Paper
@@ -16,19 +15,36 @@ LTC provides aerial recordings captured across multiple seasons and environmenta
 
 The dataset includes multiple flight sequences together with calibration data, sensor metadata, aerial imagery, semantic coverage information, and land-cover annotations.
 
-<span class="conference_badge">Provisionally accepted at ECCV 2026</span>
+<span class="conference_badge">Accepted at ECCV 2026</span>
 
 ## Resources
 
 <ul class="resource_list">
-  <li><img src="/assets/icons/github.svg" class="resource_icon"> <a href="https://github.com/hlzmnhnry/pygeon">github.com/hlzmnhnry/pygeon</a></li>
-  <li><img src="/assets/icons/owncloud.svg" class="resource_icon"> <a href="https://ltc.cvg.cit.tum.de/">ltc.cvg.cit.tum.de</a></li>
-  <li><img src="/assets/icons/owncloud.svg" class="resource_icon"> <a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/">AWS S3 mirror</a></li>
+  <li>Library to work with the data: <img src="/assets/icons/github.svg" class="resource_icon"> <a href="https://github.com/hlzmnhnry/pygeon">github.com/hlzmnhnry/pygeon</a></li>
 </ul>
 
 ## Dataset Download
 
-For large downloads, we recommend using the AWS CLI:
+The dataset is organized into the following flight campaigns:
+
+<ul>
+  <li><code>2022-02-23-11-45-35</code></li>
+  <li><code>2022-02-23-15-53-20</code></li>
+  <li><code>2022-06-10-10-42-22</code></li>
+  <li><code>2022-06-14-10-16-48</code></li>
+  <li><code>2022-10-19-14-14-59</code></li>
+  <li><code>2024-01-29-12-31-01</code></li>
+</ul>
+
+In addition, global metadata are provided under:
+
+<ul>
+  <li><code>meta/</code></li>
+</ul>
+
+For large downloads, we recommend using the AWS CLI.
+
+### Download the complete dataset
 
 ```bash
 aws s3 cp s3://ltc-downloads-394266643128/files/ ./ltc-dataset/ \
@@ -37,10 +53,30 @@ aws s3 cp s3://ltc-downloads-394266643128/files/ ./ltc-dataset/ \
   --region eu-central-1
 ```
 
-Individual sequences can be downloaded with:
+### Download a single campaign
+
+Replace the `<campaign>` in the command below with one of the campaign identifiers listed above:
 
 ```bash
-aws s3 cp s3://ltc-downloads-394266643128/files/2022-02-23-11-45-35/ ./2022-02-23-11-45-35/ \
+aws s3 cp s3://ltc-downloads-394266643128/files/<campaign>/ ./<campaign>/ \
+  --recursive \
+  --no-sign-request \
+  --region eu-central-1
+```
+
+For example, to download the campaign <code>2022-06-14-10-16-48</code>:
+
+```bash
+aws s3 cp s3://ltc-downloads-394266643128/files/2022-06-14-10-16-48/ ./2022-06-14-10-16-48/ \
+  --recursive \
+  --no-sign-request \
+  --region eu-central-1
+```
+
+### Download global metadata
+
+```bash
+aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
   --recursive \
   --no-sign-request \
   --region eu-central-1

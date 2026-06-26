@@ -82,7 +82,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
 
 ## Sequence Downloads
 
-<details class="download_campaign">
+<details markdown="1" class="download_campaign">
 <summary><strong>2022-02-23-11-45-35</strong> — 36 files, 187.6 GiB</summary>
 
 Download complete sequence via AWS CLI:
@@ -154,7 +154,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/2022-02-23-11-45-35/ ./2022-02-2
 
 </details>
 
-<details class="download_campaign">
+<details markdown="1" class="download_campaign">
 <summary><strong>2022-02-23-15-53-20</strong> — 36 files, 178.8 GiB</summary>
 
 Download complete sequence via AWS CLI:
@@ -226,7 +226,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/2022-02-23-15-53-20/ ./2022-02-2
 
 </details>
 
-<details class="download_campaign">
+<details markdown="1" class="download_campaign">
 <summary><strong>2022-06-10-10-42-22</strong> — 32 files, 155.4 GiB</summary>
 
 Download complete sequence via AWS CLI:
@@ -294,7 +294,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/2022-06-10-10-42-22/ ./2022-06-1
 
 </details>
 
-<details class="download_campaign">
+<details markdown="1" class="download_campaign">
 <summary><strong>2022-06-14-10-16-48</strong> — 57 files, 432.9 GiB</summary>
 
 Download complete sequence via AWS CLI:
@@ -387,7 +387,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/2022-06-14-10-16-48/ ./2022-06-1
 
 </details>
 
-<details class="download_campaign">
+<details markdown="1" class="download_campaign">
 <summary><strong>2022-10-19-14-14-59</strong> — 61 files, 492.5 GiB</summary>
 
 Download complete sequence via AWS CLI:
@@ -484,7 +484,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/2022-10-19-14-14-59/ ./2022-10-1
 
 </details>
 
-<details class="download_campaign">
+<details markdown="1" class="download_campaign">
 <summary><strong>2024-01-29-12-31-01</strong> — 63 files, 496.7 GiB</summary>
 
 Download complete sequence via AWS CLI:
@@ -583,7 +583,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/2024-01-29-12-31-01/ ./2024-01-2
 
 </details>
 
-<details class="download_campaign">
+<details markdown="1" class="download_campaign">
 <summary><strong>Global metadata</strong> — 5 files, 0.0 GiB</summary>
 
 Download complete sequence via AWS CLI:

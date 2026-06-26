@@ -3,7 +3,7 @@ title: "Leaving the City"
 date: 2026-06-26
 category: Paper
 image: /assets/ltc_teaser.png
------------------------------
+---
 
 Leaving the City (LTC) is a large-scale aerial dataset for cross-season localization in unstructured environments.
 
@@ -19,8 +19,10 @@ The dataset includes multiple flight sequences together with calibration data, s
 
 ## Resources
 
+To understand and work with our dataset, we provide the following resources:
+
 <ul class="resource_list">
-  <li>Library to work with the data: <img src="/assets/icons/github.svg" class="resource_icon"> <a href="https://github.com/hlzmnhnry/pygeon">github.com/hlzmnhnry/pygeon</a></li>
+  <li><img src="/assets/icons/github.svg" class="resource_icon"> <a href="https://github.com/hlzmnhnry/pygeon">github.com/hlzmnhnry/pygeon</a></li>
 </ul>
 
 ## Dataset Download
@@ -36,13 +38,9 @@ The dataset is organized into the following flight campaigns:
   <li><code>2024-01-29-12-31-01</code></li>
 </ul>
 
-In addition, global metadata are provided under:
-
-<ul>
-  <li><code>meta/</code></li>
-</ul>
-
+In addition, global metadata are provided under a shared `meta` folder.
 For large downloads, we recommend using the AWS CLI.
+But individual download links are provided on the bottom of the page.
 
 ### Download the complete dataset
 

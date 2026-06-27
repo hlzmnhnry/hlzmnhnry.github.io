@@ -19,7 +19,7 @@ The dataset includes multiple flight sequences together with calibration data, s
 
 ## Resources
 
-To understand and work with our dataset, we provide the following resources:
+To help you understand and work with our dataset, we provide the following resources:
 
 <ul class="resource_list">
   <li><img src="/assets/icons/github.svg" class="resource_icon"> <a href="https://github.com/hlzmnhnry/pygeon">github.com/hlzmnhnry/pygeon</a></li>
@@ -40,7 +40,7 @@ The dataset is organized into the following flight campaigns:
 </ul>
 
 In addition, global metadata are provided under a shared `meta` folder.
-The expected local dataset layout is documented in the <a href="https://github.com/hlzmnhnry/pygeon/blob/main/data/README.md">data README</a>.
+The expected local dataset layout is documented in the <a href="https://github.com/hlzmnhnry/pygeon/blob/main/data/README.md">DATA README</a>.
 For large downloads, we recommend using the AWS CLI.
 But individual download links are provided on the bottom of the page.
 
@@ -550,7 +550,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
 </details>
 
 <details markdown="1" class="download_campaign">
-<summary><strong>Global metadata</strong> — 5 files, 0.0 GiB</summary>
+<summary><strong>Global metadata</strong> — 5 files, &lt;0.1 GiB</summary>
 
 ### Core sensor files
 

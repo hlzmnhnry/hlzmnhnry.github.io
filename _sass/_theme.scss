@@ -76,14 +76,46 @@ body {
 }
 
 .conference_badge {
-  display: inline-block;
-  background-color: #e6f0ff;
-  color: #1a4fb3;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 4px 10px;
-  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  background-color: lighten($backgroundColour, 2%);
+  border: 1px solid lighten($bodyColour, 58%);
+  border-left: 4px solid $linkColour;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba($bodyColour, .06);
+  color: $headingColour;
+  font-size: .75rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: .42rem .65rem .42rem .5rem;
   margin-bottom: 10px;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.conference_badge::before {
+  content: "";
+  width: .45rem;
+  height: .45rem;
+  border-radius: 50%;
+  background-color: $linkColour;
+  flex: 0 0 auto;
+}
+
+a.conference_badge {
+  background-image: none;
+}
+
+a.conference_badge:hover,
+a.conference_badge:active,
+a.conference_badge:focus {
+  background-color: darken($backgroundColour, 2%);
+  background-image: none;
+  border-color: lighten($bodyColour, 50%);
+  border-left-color: darken($linkColour, 8%);
+  color: $headingColour;
+  text-decoration: none;
 }
 
 .download_campaign {

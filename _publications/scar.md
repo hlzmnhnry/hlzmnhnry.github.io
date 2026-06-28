@@ -15,7 +15,7 @@ SCAR leverages georeferenced satellite imagery and elevation data to establish l
 
 Unlike traditional calibration procedures, SCAR operates without dedicated calibration targets or specific motion patterns, enabling continuous calibration during real-world deployments.
 
-<span class="conference_badge">Accepted at CVPR Workshop (VOCVALC) 2026</span>
+<a class="conference_badge" href="https://openaccess.thecvf.com/content/CVPR2026W/VOCVALC/papers/Holzemann_SCAR_Satellite_Imagery-Based_Calibration_for_Aerial_Recordings_CVPRW_2026_paper.pdf">Accepted at CVPR Workshop (VOCVALC) 2026</a>
 
 ## Resources
 

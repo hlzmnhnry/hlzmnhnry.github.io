@@ -552,7 +552,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
 <details markdown="1" class="download_campaign">
 <summary><strong>Global metadata</strong> — 5 files, &lt;0.1 GiB</summary>
 
-### Core sensor files
+### Shared metadata files
 
 <ul class="download_list">
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/meta/available_tiles_nrw.csv">available_tiles_nrw.csv</a> <span class="file_size">(315.2 KiB)</span></li>

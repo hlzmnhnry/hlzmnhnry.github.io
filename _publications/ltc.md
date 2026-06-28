@@ -87,7 +87,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
 ## Sequence Downloads
 
 <details markdown="1" class="download_campaign">
-<summary><strong>2022-02-23-11-45-35</strong> — 36 files, 187.6 GiB</summary>
+<summary><strong>2022-02-23-11-45-35</strong> — 31 files, 187.6 GiB</summary>
 
 ### Calibration
 
@@ -97,7 +97,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-02-23-11-45-35/calibration/imu_noise.json">calibration/imu_noise.json</a> <span class="file_size">(222 B)</span></li>
 </ul>
 
-### Image archives and image metadata
+### Image archives
 
 <ul class="download_list">
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-02-23-11-45-35/images/2022-02-23-11-45-35_images_00000.zip">images/2022-02-23-11-45-35_images_00000.zip</a> <span class="file_size">(10.9 GiB)</span></li>
@@ -118,11 +118,6 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-02-23-11-45-35/images/2022-02-23-11-45-35_images_00015.zip">images/2022-02-23-11-45-35_images_00015.zip</a> <span class="file_size">(10.8 GiB)</span></li>
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-02-23-11-45-35/images/2022-02-23-11-45-35_images_00016.zip">images/2022-02-23-11-45-35_images_00016.zip</a> <span class="file_size">(10.5 GiB)</span></li>
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-02-23-11-45-35/images/2022-02-23-11-45-35_images_00017.zip">images/2022-02-23-11-45-35_images_00017.zip</a> <span class="file_size">(2.6 GiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-02-23-11-45-35/images/camera.csv">images/camera.csv</a> <span class="file_size">(5.0 MiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-02-23-11-45-35/images/image_files.csv">images/image_files.csv</a> <span class="file_size">(22.0 MiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-02-23-11-45-35/images/image_shards.csv">images/image_shards.csv</a> <span class="file_size">(3.2 KiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-02-23-11-45-35/images/manifest.json">images/manifest.json</a> <span class="file_size">(578 B)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-02-23-11-45-35/images/missing_images.csv">images/missing_images.csv</a> <span class="file_size">(323 B)</span></li>
 </ul>
 
 ### Land-cover annotations
@@ -153,7 +148,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
 </details>
 
 <details markdown="1" class="download_campaign">
-<summary><strong>2022-02-23-15-53-20</strong> — 36 files, 178.8 GiB</summary>
+<summary><strong>2022-02-23-15-53-20</strong> — 31 files, 178.8 GiB</summary>
 
 ### Calibration
 
@@ -163,7 +158,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-02-23-15-53-20/calibration/imu_noise.json">calibration/imu_noise.json</a> <span class="file_size">(222 B)</span></li>
 </ul>
 
-### Image archives and image metadata
+### Image archives
 
 <ul class="download_list">
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-02-23-15-53-20/images/2022-02-23-15-53-20_images_00000.zip">images/2022-02-23-15-53-20_images_00000.zip</a> <span class="file_size">(10.4 GiB)</span></li>
@@ -184,11 +179,6 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-02-23-15-53-20/images/2022-02-23-15-53-20_images_00015.zip">images/2022-02-23-15-53-20_images_00015.zip</a> <span class="file_size">(10.4 GiB)</span></li>
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-02-23-15-53-20/images/2022-02-23-15-53-20_images_00016.zip">images/2022-02-23-15-53-20_images_00016.zip</a> <span class="file_size">(10.0 GiB)</span></li>
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-02-23-15-53-20/images/2022-02-23-15-53-20_images_00017.zip">images/2022-02-23-15-53-20_images_00017.zip</a> <span class="file_size">(2.8 GiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-02-23-15-53-20/images/camera.csv">images/camera.csv</a> <span class="file_size">(5.1 MiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-02-23-15-53-20/images/image_files.csv">images/image_files.csv</a> <span class="file_size">(22.1 MiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-02-23-15-53-20/images/image_shards.csv">images/image_shards.csv</a> <span class="file_size">(3.2 KiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-02-23-15-53-20/images/manifest.json">images/manifest.json</a> <span class="file_size">(579 B)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-02-23-15-53-20/images/missing_images.csv">images/missing_images.csv</a> <span class="file_size">(1.4 KiB)</span></li>
 </ul>
 
 ### Land-cover annotations
@@ -219,7 +209,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
 </details>
 
 <details markdown="1" class="download_campaign">
-<summary><strong>2022-06-10-10-42-22</strong> — 32 files, 155.4 GiB</summary>
+<summary><strong>2022-06-10-10-42-22</strong> — 28 files, 155.4 GiB</summary>
 
 ### Calibration
 
@@ -229,7 +219,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-06-10-10-42-22/calibration/imu_noise.json">calibration/imu_noise.json</a> <span class="file_size">(222 B)</span></li>
 </ul>
 
-### Image archives and image metadata
+### Image archives
 
 <ul class="download_list">
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-06-10-10-42-22/images/2022-06-10-10-42-22_images_00000.zip">images/2022-06-10-10-42-22_images_00000.zip</a> <span class="file_size">(10.0 GiB)</span></li>
@@ -247,10 +237,6 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-06-10-10-42-22/images/2022-06-10-10-42-22_images_00012.zip">images/2022-06-10-10-42-22_images_00012.zip</a> <span class="file_size">(10.1 GiB)</span></li>
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-06-10-10-42-22/images/2022-06-10-10-42-22_images_00013.zip">images/2022-06-10-10-42-22_images_00013.zip</a> <span class="file_size">(10.4 GiB)</span></li>
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-06-10-10-42-22/images/2022-06-10-10-42-22_images_00014.zip">images/2022-06-10-10-42-22_images_00014.zip</a> <span class="file_size">(5.1 GiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-06-10-10-42-22/images/camera.csv">images/camera.csv</a> <span class="file_size">(4.2 MiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-06-10-10-42-22/images/image_files.csv">images/image_files.csv</a> <span class="file_size">(18.6 MiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-06-10-10-42-22/images/image_shards.csv">images/image_shards.csv</a> <span class="file_size">(2.7 KiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-06-10-10-42-22/images/manifest.json">images/manifest.json</a> <span class="file_size">(534 B)</span></li>
 </ul>
 
 ### Land-cover annotations
@@ -281,7 +267,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
 </details>
 
 <details markdown="1" class="download_campaign">
-<summary><strong>2022-06-14-10-16-48</strong> — 57 files, 432.9 GiB</summary>
+<summary><strong>2022-06-14-10-16-48</strong> — 52 files, 432.9 GiB</summary>
 
 ### Calibration
 
@@ -291,7 +277,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-06-14-10-16-48/calibration/imu_noise.json">calibration/imu_noise.json</a> <span class="file_size">(222 B)</span></li>
 </ul>
 
-### Image archives and image metadata
+### Image archives
 
 <ul class="download_list">
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-06-14-10-16-48/images/2022-06-14-10-16-48_images_00000.zip">images/2022-06-14-10-16-48_images_00000.zip</a> <span class="file_size">(10.2 GiB)</span></li>
@@ -333,11 +319,6 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-06-14-10-16-48/images/2022-06-14-10-16-48_images_00036.zip">images/2022-06-14-10-16-48_images_00036.zip</a> <span class="file_size">(10.8 GiB)</span></li>
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-06-14-10-16-48/images/2022-06-14-10-16-48_images_00037.zip">images/2022-06-14-10-16-48_images_00037.zip</a> <span class="file_size">(10.3 GiB)</span></li>
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-06-14-10-16-48/images/2022-06-14-10-16-48_images_00038.zip">images/2022-06-14-10-16-48_images_00038.zip</a> <span class="file_size">(4.6 GiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-06-14-10-16-48/images/camera.csv">images/camera.csv</a> <span class="file_size">(11.0 MiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-06-14-10-16-48/images/image_files.csv">images/image_files.csv</a> <span class="file_size">(49.2 MiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-06-14-10-16-48/images/image_shards.csv">images/image_shards.csv</a> <span class="file_size">(6.8 KiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-06-14-10-16-48/images/manifest.json">images/manifest.json</a> <span class="file_size">(578 B)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-06-14-10-16-48/images/missing_images.csv">images/missing_images.csv</a> <span class="file_size">(189 B)</span></li>
 </ul>
 
 ### Land-cover annotations
@@ -368,7 +349,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
 </details>
 
 <details markdown="1" class="download_campaign">
-<summary><strong>2022-10-19-14-14-59</strong> — 61 files, 492.5 GiB</summary>
+<summary><strong>2022-10-19-14-14-59</strong> — 57 files, 492.5 GiB</summary>
 
 ### Calibration
 
@@ -378,7 +359,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-10-19-14-14-59/calibration/imu_noise.json">calibration/imu_noise.json</a> <span class="file_size">(222 B)</span></li>
 </ul>
 
-### Image archives and image metadata
+### Image archives
 
 <ul class="download_list">
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-10-19-14-14-59/images/2022-10-19-14-14-59_images_00000.zip">images/2022-10-19-14-14-59_images_00000.zip</a> <span class="file_size">(10.1 GiB)</span></li>
@@ -425,10 +406,6 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-10-19-14-14-59/images/2022-10-19-14-14-59_images_00041.zip">images/2022-10-19-14-14-59_images_00041.zip</a> <span class="file_size">(10.5 GiB)</span></li>
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-10-19-14-14-59/images/2022-10-19-14-14-59_images_00042.zip">images/2022-10-19-14-14-59_images_00042.zip</a> <span class="file_size">(11.0 GiB)</span></li>
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-10-19-14-14-59/images/2022-10-19-14-14-59_images_00043.zip">images/2022-10-19-14-14-59_images_00043.zip</a> <span class="file_size">(4.4 GiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-10-19-14-14-59/images/camera.csv">images/camera.csv</a> <span class="file_size">(12.4 MiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-10-19-14-14-59/images/image_files.csv">images/image_files.csv</a> <span class="file_size">(55.7 MiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-10-19-14-14-59/images/image_shards.csv">images/image_shards.csv</a> <span class="file_size">(7.7 KiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2022-10-19-14-14-59/images/manifest.json">images/manifest.json</a> <span class="file_size">(534 B)</span></li>
 </ul>
 
 ### Land-cover annotations
@@ -459,7 +436,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
 </details>
 
 <details markdown="1" class="download_campaign">
-<summary><strong>2024-01-29-12-31-01</strong> — 63 files, 496.7 GiB</summary>
+<summary><strong>2024-01-29-12-31-01</strong> — 59 files, 496.7 GiB</summary>
 
 ### Calibration
 
@@ -469,7 +446,7 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2024-01-29-12-31-01/calibration/imu_noise.json">calibration/imu_noise.json</a> <span class="file_size">(222 B)</span></li>
 </ul>
 
-### Image archives and image metadata
+### Image archives
 
 <ul class="download_list">
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2024-01-29-12-31-01/images/2024-01-29-12-31-01_images_00000.zip">images/2024-01-29-12-31-01_images_00000.zip</a> <span class="file_size">(11.9 GiB)</span></li>
@@ -518,10 +495,6 @@ aws s3 cp s3://ltc-downloads-394266643128/files/meta/ ./meta/ \
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2024-01-29-12-31-01/images/2024-01-29-12-31-01_images_00043.zip">images/2024-01-29-12-31-01_images_00043.zip</a> <span class="file_size">(10.2 GiB)</span></li>
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2024-01-29-12-31-01/images/2024-01-29-12-31-01_images_00044.zip">images/2024-01-29-12-31-01_images_00044.zip</a> <span class="file_size">(10.5 GiB)</span></li>
   <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2024-01-29-12-31-01/images/2024-01-29-12-31-01_images_00045.zip">images/2024-01-29-12-31-01_images_00045.zip</a> <span class="file_size">(987.8 MiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2024-01-29-12-31-01/images/camera.csv">images/camera.csv</a> <span class="file_size">(12.8 MiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2024-01-29-12-31-01/images/image_files.csv">images/image_files.csv</a> <span class="file_size">(57.7 MiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2024-01-29-12-31-01/images/image_shards.csv">images/image_shards.csv</a> <span class="file_size">(8.0 KiB)</span></li>
-  <li><a href="https://ltc-downloads-394266643128.s3.eu-central-1.amazonaws.com/files/2024-01-29-12-31-01/images/manifest.json">images/manifest.json</a> <span class="file_size">(534 B)</span></li>
 </ul>
 
 ### Land-cover annotations

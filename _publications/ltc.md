@@ -26,6 +26,8 @@ To help you understand and work with our dataset, we provide the following resou
   <li><img src="/assets/icons/arxiv.svg" class="resource_icon"> <em>Coming soon</em></li>
 </ul>
 
+For questions, download problems, or issues with the dataset, please open an issue in the <a href="https://github.com/hlzmnhnry/pygeon/issues">Pygeon repository</a>.
+
 ## Dataset Download
 
 The dataset is organized into the following flight campaigns:

@@ -8,6 +8,8 @@ In the paper *Semantic Clustering of Image Retrieval Databases used for Visual L
 
 <!-- more -->
 
+<img src="/assets/scvl_teaser.png">
+
 <a class="conference_badge" href="https://openaccess.thecvf.com/content/WACV2025/papers/Holzemann_Semantic_Clustering_of_Image_Retrieval_Databases_used_for_Visual_Localization_WACV_2025_paper.pdf">Published at WACV 2025</a>
 
 ## Resources

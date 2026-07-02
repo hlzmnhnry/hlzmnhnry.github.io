@@ -51,6 +51,8 @@ Individual download links are provided on the bottom of the page.
 
 ```bash
 wget --mirror --no-parent --no-host-directories \
+  --reject-regex='[?]C=' \
+  --reject='index.html*' \
   --directory-prefix=ltc-dataset \
   https://ltc.cvg.cit.tum.de/
 ```
@@ -61,6 +63,8 @@ Replace the `<campaign>` in the command below with one of the campaign identifie
 
 ```bash
 wget --mirror --no-parent --no-host-directories \
+  --reject-regex='[?]C=' \
+  --reject='index.html*' \
   --cut-dirs=1 \
   --directory-prefix=<campaign> \
   https://ltc.cvg.cit.tum.de/<campaign>/
@@ -70,6 +74,8 @@ For example, to download the campaign <code>2022-06-14-10-16-48</code>:
 
 ```bash
 wget --mirror --no-parent --no-host-directories \
+  --reject-regex='[?]C=' \
+  --reject='index.html*' \
   --cut-dirs=1 \
   --directory-prefix=2022-06-14-10-16-48 \
   https://ltc.cvg.cit.tum.de/2022-06-14-10-16-48/
@@ -79,6 +85,8 @@ wget --mirror --no-parent --no-host-directories \
 
 ```bash
 wget --mirror --no-parent --no-host-directories \
+  --reject-regex='[?]C=' \
+  --reject='index.html*' \
   --cut-dirs=1 \
   --directory-prefix=meta \
   https://ltc.cvg.cit.tum.de/meta/

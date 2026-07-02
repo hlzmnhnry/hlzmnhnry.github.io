@@ -23,7 +23,7 @@ To help you understand and work with our dataset, we provide the following resou
 
 <ul class="resource_list">
   <li><img src="/assets/icons/github.svg" class="resource_icon"> <a href="https://github.com/hlzmnhnry/pygeon">github.com/hlzmnhnry/pygeon</a></li>
-  <li><img src="/assets/icons/owncloud.svg" class="resource_icon"> <a href="https://ltc.cvg.cit.tum.de/">ltc.cvg.cit.tum.de</a></li>
+  <li><img src="/assets/icons/tum.svg" class="resource_icon"> <a href="https://ltc.cvg.cit.tum.de/">ltc.cvg.cit.tum.de</a></li>
   <li><img src="/assets/icons/arxiv.svg" class="resource_icon"> <em>Coming soon</em></li>
 </ul>
 

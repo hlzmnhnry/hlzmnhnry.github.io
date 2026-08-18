@@ -23,7 +23,7 @@ The dataset includes multiple flight sequences together with calibration data, s
 
 ## Abstract
 
-Long-term aerial localization requires matching live flight imagery against archival reference maps, demanding feature representations that are invariant to severe appearance changes and perceptual aliasing. However, current benchmarks report only aggregate accuracy over predominantly man-made environments, masking severe terrain-dependent performance gaps. As a result, localization performance over unstructured natural landscapes—where self-similar textures and drastic seasonal changes dominate — remains effectively unmeasured.
+Long-term aerial localization requires matching live flight imagery against archival reference maps, demanding feature representations that are invariant to severe appearance changes and perceptual aliasing. However, current benchmarks report only aggregate accuracy over predominantly man-made environments, masking severe terrain-dependent performance gaps. As a result, localization performance over unstructured natural landscapes — where self-similar textures and drastic seasonal changes dominate — remains effectively unmeasured.
 
 To address this, we introduce *Leaving the City*, the first large-scale aerial benchmark designed to isolate and quantify terrain-dependent localization gaps. Captured via a microlight aircraft, our dataset comprises 1,379 km of flight trajectories flown repeatedly to capture distinct seasonal variations. We pair high-frame-rate imagery and inertial measurements with semantic terrain masks, multi-year-old orthophotos, and precise 6-DoF ground truth.
 

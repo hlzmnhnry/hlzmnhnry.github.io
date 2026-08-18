@@ -1,16 +1,8 @@
-<nav class="nav">
-  <ul class="list list--nav">
-    {% for item in site.pages %}
-      {% unless item.title == false or item.url contains "/page" or item.url contains "/404.html" or item.url contains "/feed." %}
-        <li class="item  item--nav{% if item.url == page.url %}  item--current{% endif %}">
-          {% if item.collectionpage %}
-            {% assign collectiondata = site.collections | where: "label", item.collectionpage | first %}
-            <a href="{{ site.baseurl }}{{ item.url }}">{{ collectiondata.title }}</a>
-          {% else %}
-            <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
-          {% endif %}
-        </li>
-      {% endunless %}
-    {% endfor %}
-  </ul>
+<nav class="nav" aria-label="Primary navigation">
+  <a class="nav__link{% if page.url == '/' %} nav__link--current{% endif %}" href="{{ '/' | relative_url }}">About</a>
+  <a class="nav__link{% if page.url contains '/publications' %} nav__link--current{% endif %}" href="{{ '/publications/' | relative_url }}">Publications</a>
+  <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch color theme">
+    <svg class="theme-toggle__sun" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path></svg>
+    <svg class="theme-toggle__moon" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path d="M20.5 14.1A8.5 8.5 0 0 1 9.9 3.5a8.5 8.5 0 1 0 10.6 10.6Z"></path></svg>
+  </button>
 </nav>

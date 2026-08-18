@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{% include site-header.html %}
+
+<main class="main container publication-detail" id="main-content">
+  <article class="article article--publication typeset">
+    <a class="back-link" href="{{ '/publications/' | relative_url }}"><span aria-hidden="true">←</span> All publications</a>
+    <header class="article__header">
+      <p class="eyebrow">{{ page.category | default: 'Publication' }} · {{ page.date | date: '%Y' }}</p>
+      <h1>{{ page.title }}</h1>
+    </header>
+    {{ content }}
+  </article>
+</main>
+
+{% include site-footer.html %}

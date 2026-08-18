@@ -1,52 +1,26 @@
 # Site configuration
-# 1. Files excluded from Jekyll builds
-# 2. Installed Gems
-# 3. Gem settings
-# 4. Jekyll settings
-# 5. Collections
-# 6. Jekyll collections settings
-# 7. Site settings
-
-# 1. Files excluded from Jekyll builds
 exclude:
-- README.md
-- CODE_OF_CONDUCT.md
-- CONTRIBUTING.md
-- screenshot.png
-- LICENSE
-- CNAME
-- Gemfile
-- Gemfile.lock
-- garth-jekyll-theme.gemspec
+  - README.md
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - garth-jekyll-theme.gemspec
+  - _posts
 
-# 2. Installed Gems
-plugins:
-- jekyll-paginate
-
-# 3. Gem settings
-paginate: 2 # jekyll-paginate > items per page
-paginate_path: page:num # jekyll-paginate > blog page
-
-# 4. Jekyll settings
 sass:
-  style: compressed # Style compression
-permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
-excerpt_separator: <!-- more --> # Marks end of excerpt in posts
-timezone: Europe/Berlin # Timezone for blog posts and alike
+  style: compressed
+permalink: pretty
+excerpt_separator: <!-- more -->
+timezone: Europe/Berlin
 
-# 5. Collections
 collections:
-  posts:
-    title: Blog # Needed for Siteleaf
-    output: true
-    description: "A place for documenting ideas, concepts, and technical explorations."
   publications:
     title: Publications
     output: true
     permalink: /publications/:name
-    description: "Papers and other published work."
+    description: "Selected research in visual localization, sensor fusion, and robust autonomous systems."
 
-# 6. Jekyll collections settings
 defaults:
   -
     scope:
@@ -57,22 +31,16 @@ defaults:
   -
     scope:
       path: ""
-      type: posts
-    values:
-      layout: post # Default layout
-  -
-    scope:
-      path: ""
       type: publications
     values:
-      layout: post # Default layout for publications
+      layout: publication
 
-# 7. Site settings
-encoding: utf-8 # Make sure the encoding is right
-title: "hlzmnhnry" # Site name or title
-logo: "/assets/mylogo.svg" # Site logo
-# favicon: "/favicon.ico" # Uncomment to add custom favicon, or leave as is to use site logo
-description: "Personal space for collecting ideas about various topics" # Site description and default description
-url: "https://hlzmnhnry.github.io" # Site url
+encoding: utf-8
+title: "Henry Hölzemann"
+tagline: "Researcher in Sensor Fusion & Localization"
+logo: "/assets/me.jpg"
+favicon: "/assets/favicon.png"
+description: "Researcher working on sensor fusion, visual localization, and robust navigation in challenging environments."
+url: "https://hlzmnhnry.github.io"
 baseurl: ""
 lang: en-US

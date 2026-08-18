@@ -2,14 +2,18 @@
 title: "Leaving the City"
 date: 2026-06-26
 category: Paper
-image: /assets/ltc_teaser.png
+image: /assets/ltc_white.png
+image_dark: /assets/ltc_black.png
 ---
 
 Leaving the City (LTC) is a large-scale aerial dataset for cross-season localization in unstructured environments.
 
 <!-- more -->
 
-<img src="/assets/ltc_teaser.png">
+<div class="themed_figure">
+  <img class="themed_image themed_image--light" src="/assets/ltc_white.png" alt="Overview of the Leaving the City aerial dataset">
+  <img class="themed_image themed_image--dark" src="/assets/ltc_black.png" alt="Overview of the Leaving the City aerial dataset">
+</div>
 
 LTC provides aerial recordings captured across multiple seasons and environmental conditions, targeting robust localization beyond structured urban scenes. The dataset focuses on challenging unstructured environments such as forests, fields, rural areas, and repetitive natural landscapes, where visual localization is particularly difficult.
 
@@ -17,14 +21,22 @@ The dataset includes multiple flight sequences together with calibration data, s
 
 <span class="conference_badge">Accepted at ECCV 2026</span>
 
+## Abstract
+
+Long-term aerial localization requires matching live flight imagery against archival reference maps, demanding feature representations that are invariant to severe appearance changes and perceptual aliasing. However, current benchmarks report only aggregate accuracy over predominantly man-made environments, masking severe terrain-dependent performance gaps. As a result, localization performance over unstructured natural landscapes—where self-similar textures and drastic seasonal changes dominate — remains effectively unmeasured.
+
+To address this, we introduce *Leaving the City*, the first large-scale aerial benchmark designed to isolate and quantify terrain-dependent localization gaps. Captured via a microlight aircraft, our dataset comprises 1,379 km of flight trajectories flown repeatedly to capture distinct seasonal variations. We pair high-frame-rate imagery and inertial measurements with semantic terrain masks, multi-year-old orthophotos, and precise 6-DoF ground truth.
+
+Evaluating state-of-the-art matchers through our terrain-stratified protocol reveals a systematic bias: methods that succeed on man-made surfaces degrade sharply over natural terrain undergoing strong appearance change. By exposing where current methods fail, our benchmark provides a rigorous foundation for developing robust, all-terrain aerial localization. The dataset and code are publicly available.
+
 ## Resources
 
 To help you understand and work with our dataset, we provide the following resources:
 
 <ul class="resource_list">
-  <li><img src="/assets/icons/github.svg" class="resource_icon"> <a href="https://github.com/hlzmnhnry/pygeon">github.com/hlzmnhnry/pygeon</a></li>
-  <li><img src="/assets/icons/tum.svg" class="resource_icon"> <a href="https://ltc.cvg.cit.tum.de/">ltc.cvg.cit.tum.de</a></li>
-  <li><img src="/assets/icons/arxiv.svg" class="resource_icon"> <em>Coming soon</em></li>
+  <li><img src="/assets/icons/github.svg" class="resource_icon" alt=""><span class="resource_label">Code</span><a href="https://github.com/hlzmnhnry/pygeon">github.com/hlzmnhnry/pygeon</a></li>
+  <li><img src="/assets/icons/tum.svg" class="resource_icon" alt=""><span class="resource_label">Dataset</span><a href="https://ltc.cvg.cit.tum.de/">ltc.cvg.cit.tum.de</a></li>
+  <li><img src="/assets/icons/arxiv.svg" class="resource_icon" alt=""><span class="resource_label">Paper</span><em>Coming soon</em></li>
 </ul>
 
 For questions, download problems, or issues with the dataset, please open an issue in the <a href="https://github.com/hlzmnhnry/pygeon/issues">Pygeon repository</a>.

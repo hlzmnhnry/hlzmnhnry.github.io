@@ -1,4 +1,31 @@
 ---
-layout: home
-collectionpage: posts
+layout: default
+title: About
+description: "Henry Hölzemann is a researcher working on sensor fusion, visual localization, and robust navigation for autonomous systems."
 ---
+
+{% include site-header.html %}
+
+<main class="main" id="main-content">
+  <section class="hero container" aria-labelledby="about-title">
+    <div class="hero__content">
+      <p class="eyebrow">About</p>
+      <h1 id="about-title">Research on sensor fusion and localization.</h1>
+      <p class="hero__lead">I’m Henry, a research assistant working on sensor fusion and localization in challenging, GNSS-denied environments.</p>
+      <p class="hero__text">My work sits at the intersection of visual-inertial navigation, geospatial perception, and aerial robotics. I develop practical methods and datasets that help autonomous systems understand where they are — even when conventional positioning is unreliable.</p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="{{ '/publications/' | relative_url }}">View publications <span aria-hidden="true">↗</span></a>
+        <a class="button button--secondary" href="https://github.com/hlzmnhnry" rel="me">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+
+    <div class="hero__portrait-wrap" aria-hidden="true">
+      <div class="hero__portrait-frame">
+        <img class="hero__portrait" src="{{ site.logo | relative_url }}" alt="" width="420" height="420">
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{% include site-footer.html %}

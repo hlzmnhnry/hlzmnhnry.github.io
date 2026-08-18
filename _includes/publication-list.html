@@ -1,0 +1,29 @@
+{% assign collection_items = site.publications | sort: 'date' | reverse %}
+
+<ol class="publication-list__items">
+  {% for publication in collection_items %}
+    <li>
+      <a class="publication-card" href="{{ publication.url | relative_url }}">
+        <div class="publication-card__image">
+          {% if publication.image %}
+            <img class="themed_image themed_image--light" src="{{ publication.image | relative_url }}" alt="Preview for {{ publication.title }}" loading="lazy">
+            {% if publication.image_dark %}
+              <img class="themed_image themed_image--dark" src="{{ publication.image_dark | relative_url }}" alt="Preview for {{ publication.title }}" loading="lazy">
+            {% endif %}
+          {% else %}
+            <span>{{ publication.title | slice: 0, 1 }}</span>
+          {% endif %}
+        </div>
+        <div class="publication-card__content">
+          <div class="publication-card__meta">
+            <span>{{ publication.category | default: 'Publication' }}</span>
+            <time datetime="{{ publication.date | date_to_xmlschema }}">{{ publication.date | date: '%Y' }}</time>
+          </div>
+          <h2>{{ publication.title }}</h2>
+          <div class="publication-card__excerpt">{{ publication.excerpt | strip_html | strip_newlines | truncatewords: 36 }}</div>
+          <span class="publication-card__link">Read publication <span aria-hidden="true">↗</span></span>
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ol>

@@ -6,6 +6,7 @@ category: Paper
 image: /assets/ltc_white.png
 image_dark: /assets/ltc_black.png
 interactive_map: true
+interactive_matching: true
 authors:
   - name: "Michael Schleiss"
   - name: "Henry Hölzemann"
@@ -80,7 +81,7 @@ The dataset includes multiple flight sequences together with calibration data, s
 <ul class="dataset_facts" aria-label="Additional dataset details">
   <li><strong>2 routes</strong><span>approximately 125 km and 335 km</span></li>
   <li><strong>9 h 48 min</strong><span>total recorded flight time</span></li>
-  <li><strong>4 terrain classes</strong><span>artificial, agricultural, forest, water</span></li>
+  <li><strong>4 terrain classes</strong><span>artificial surfaces, agricultural areas, forest and semi-natural areas, wetlands and waterbodies</span></li>
   <li><strong>50 / 200 Hz</strong><span>camera / inertial data and 6-DoF ground truth</span></li>
 </ul>
 
@@ -113,7 +114,7 @@ The two repeatedly flown routes can be inspected together or individually. Selec
     <div class="route_map" data-route-map role="application" aria-label="Interactive map of the Leaving the City flight routes"></div>
     <aside class="route_preview" data-route-preview aria-live="polite">
       <div class="route_preview__media">
-        <img data-preview-image src="{{ '/assets/ltc/previews/placeholder.svg' | relative_url }}" alt="Placeholder for an LTC data preview" decoding="async">
+        <img data-preview-image src="{{ '/assets/ltc/previews/placeholder.svg' | relative_url }}" alt="Map illustration shown before a preview point is selected" decoding="async">
       </div>
       <div class="route_preview__content">
         <span class="route_preview__eyebrow" data-preview-route>Data preview</span>
@@ -147,7 +148,61 @@ To address this, we introduce *Leaving the City*, the first large-scale aerial b
 
 Evaluating state-of-the-art matchers through our terrain-stratified protocol reveals a systematic bias: methods that succeed on man-made surfaces degrade sharply over natural terrain undergoing strong appearance change. By exposing where current methods fail, our benchmark provides a rigorous foundation for developing robust, all-terrain aerial localization. The dataset and code are publicly available.
 
-For questions, download problems, or issues with the dataset, please open an issue in the <a href="https://github.com/hlzmnhnry/pygeon/issues">Pygeon repository</a>.
+## Terrain-aware matching
+
+The same matcher can behave very differently depending on the terrain beneath the aircraft. Select a terrain class, then drag across the query image to compare the recorded appearance with its land-cover annotation. The correspondence view below shows the geometrically verified matches between the archival orthoreference and the aerial query.
+
+<section class="matching_explorer" data-matching-explorer data-examples="{{ '/assets/data/ltc-matching-examples.json' | relative_url }}?v={{ site.time | date: '%s' }}" aria-label="Interactive terrain-aware image matching examples">
+  <div class="matching_explorer__tabs" role="tablist" aria-label="Terrain class">
+    <button id="matching-tab-built-up" type="button" role="tab" aria-controls="matching-example-panel" aria-selected="true" data-matching-tab="built-up"><span>01</span>Artificial surfaces</button>
+    <button id="matching-tab-agriculture" type="button" role="tab" aria-controls="matching-example-panel" aria-selected="false" data-matching-tab="agriculture"><span>02</span>Agricultural areas</button>
+    <button id="matching-tab-forest" type="button" role="tab" aria-controls="matching-example-panel" aria-selected="false" data-matching-tab="forest"><span>03</span>Forest and semi-natural areas</button>
+    <button id="matching-tab-water" type="button" role="tab" aria-controls="matching-example-panel" aria-selected="false" data-matching-tab="water"><span>04</span>Wetlands and Waterbodies</button>
+  </div>
+
+  <div id="matching-example-panel" class="matching_explorer__overview" role="tabpanel" aria-labelledby="matching-tab-built-up">
+    <div class="terrain_compare" data-terrain-compare style="--reveal: 50%;">
+      <img class="terrain_compare__image" data-aerial-image src="{{ '/assets/ltc/matching/built-up-aerial.webp' | relative_url }}" alt="Aerial query over artificial surfaces">
+      <div class="terrain_compare__overlay" aria-hidden="true">
+        <img class="terrain_compare__image" data-landcover-image src="{{ '/assets/ltc/matching/built-up-landcover.webp' | relative_url }}" alt="">
+      </div>
+      <span class="terrain_compare__label terrain_compare__label--left">Land cover</span>
+      <span class="terrain_compare__label terrain_compare__label--right">Aerial image</span>
+      <span class="terrain_compare__divider" aria-hidden="true"><span>↔</span></span>
+      <input type="range" min="0" max="100" value="50" aria-label="Reveal land-cover annotation over the aerial image" data-terrain-slider>
+    </div>
+
+    <aside class="matching_explorer__story" aria-live="polite">
+      <div>
+        <span class="matching_explorer__eyebrow" data-example-sample>22-02-23-11 · #93581</span>
+        <h3 data-example-title>Artificial surfaces</h3>
+        <p class="matching_explorer__assessment" data-example-assessment>Strong geometric support</p>
+        <p data-example-description>Distinct roads, roofs, and other artificial structures yield a dense, geometrically consistent set of correspondences.</p>
+      </div>
+      <dl class="matching_metrics">
+        <div><dt>Terrain share</dt><dd data-metric="terrainShare">91.3%</dd></div>
+        <div><dt>Verified matches</dt><dd data-metric="verifiedMatches">388</dd></div>
+        <div><dt>PnP inliers</dt><dd data-metric="pnpInliers">385</dd></div>
+        <div><dt>Pose error (R / t)</dt><dd><span data-metric="rotationError">0.19°</span> / <span data-metric="translationError">2.04 m</span></dd></div>
+      </dl>
+    </aside>
+  </div>
+
+  <figure class="matching_explorer__matches">
+    <div class="matching_explorer__image_labels" aria-hidden="true"><span>Orthoreference</span><span>Aerial query</span></div>
+    <img data-matches-image src="{{ '/assets/ltc/matching/artificial-surfaces-matches.jpg' | relative_url }}" alt="Geometrically verified matches between the orthoreference and an aerial query over artificial surfaces">
+    <figcaption>Green lines show correspondences retained by geometric verification. Results use SuperPoint + LightGlue with MAGSAC filtering at full input resolution. Each orthoreference is evaluated at 0°, 90°, 180°, and 270°; correspondences from the best rotation are mapped back to the north-aligned view shown here.</figcaption>
+  </figure>
+
+  <div class="landcover_legend" aria-label="Land-cover color guide">
+    <span><i class="landcover_legend__swatch landcover_legend__swatch--built" aria-hidden="true"></i>Artificial surfaces</span>
+    <span><i class="landcover_legend__swatch landcover_legend__swatch--agri" aria-hidden="true"></i>Agricultural areas</span>
+    <span><i class="landcover_legend__swatch landcover_legend__swatch--forest" aria-hidden="true"></i>Forest and semi-natural areas</span>
+    <span><i class="landcover_legend__swatch landcover_legend__swatch--water" aria-hidden="true"></i>Wetlands and Waterbodies</span>
+  </div>
+
+  <noscript><p class="matching_explorer__noscript">Enable JavaScript to switch between the four terrain examples. The example for Artificial surfaces remains visible without it.</p></noscript>
+</section>
 
 ## Dataset Download
 
@@ -165,7 +220,9 @@ The dataset is organized into the following flight campaigns:
 In addition, global metadata are provided under a shared `meta` folder.
 The expected local dataset layout is documented in the <a href="https://github.com/hlzmnhnry/pygeon/blob/main/data/README.md">DATA README</a>.
 The dataset can be browsed directly via directory access at <a href="https://ltc.cvg.cit.tum.de/">ltc.cvg.cit.tum.de</a>.
-Individual download links are provided on the bottom of the page.
+Individual download links are provided at the bottom of this page.
+
+For questions, download problems, or issues with the dataset, please open an issue in the <a href="https://github.com/hlzmnhnry/pygeon/issues">Pygeon repository</a>.
 
 ### Download the complete dataset
 

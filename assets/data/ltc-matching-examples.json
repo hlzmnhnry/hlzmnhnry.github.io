@@ -1,0 +1,64 @@
+{
+  "examples": [
+    {
+      "id": "built-up",
+      "label": "Artificial surfaces",
+      "sample": "22-02-23-11 · #93581",
+      "aerial": "/assets/ltc/matching/built-up-aerial.webp",
+      "landcover": "/assets/ltc/matching/built-up-landcover.webp",
+      "matchesImage": "/assets/ltc/matching/artificial-surfaces-matches.jpg",
+      "terrainShare": "91.3%",
+      "verifiedMatches": "388",
+      "pnpInliers": "385",
+      "rotationError": "0.19°",
+      "translationError": "2.04 m",
+      "assessment": "Strong geometric support",
+      "description": "Distinct roads, roofs, and other artificial structures yield a dense, geometrically consistent set of correspondences."
+    },
+    {
+      "id": "agriculture",
+      "label": "Agricultural areas",
+      "sample": "22-02-23-11 · #172381",
+      "aerial": "/assets/ltc/matching/agriculture-aerial.webp",
+      "landcover": "/assets/ltc/matching/agriculture-landcover.webp",
+      "matchesImage": "/assets/ltc/matching/agricultural-areas-matches.jpg",
+      "terrainShare": "97.4%",
+      "verifiedMatches": "20",
+      "pnpInliers": "20",
+      "rotationError": "3.28°",
+      "translationError": "24.49 m",
+      "assessment": "Weak geometric support",
+      "description": "Repetitive field textures leave only a small verified match set, and the resulting pose is noticeably less accurate."
+    },
+    {
+      "id": "forest",
+      "label": "Forest and semi-natural areas",
+      "sample": "22-02-23-11 · #166281",
+      "aerial": "/assets/ltc/matching/forest-aerial.webp",
+      "landcover": "/assets/ltc/matching/forest-landcover.webp",
+      "matchesImage": "/assets/ltc/matching/forest-seminatural-matches.jpg",
+      "terrainShare": "88.7%",
+      "verifiedMatches": "25",
+      "pnpInliers": "22",
+      "rotationError": "19.87°",
+      "translationError": "213.36 m",
+      "assessment": "Pose estimate unreliable",
+      "description": "The few matches concentrate around a clearing and road boundary rather than the canopy; sparse support can still produce a severely incorrect pose."
+    },
+    {
+      "id": "water",
+      "label": "Wetlands and Waterbodies",
+      "sample": "22-02-23-11 · #108631",
+      "aerial": "/assets/ltc/matching/water-aerial.webp",
+      "landcover": "/assets/ltc/matching/water-landcover.webp",
+      "matchesImage": "/assets/ltc/matching/wetlands-waterbodies-matches.jpg",
+      "terrainShare": "80.7%",
+      "verifiedMatches": "27",
+      "pnpInliers": "23",
+      "rotationError": "1.44°",
+      "translationError": "6.94 m",
+      "assessment": "Boundary structure helps",
+      "description": "The water surface itself provides little texture; in this example, shoreline geometry can supply enough support for a usable estimate."
+    }
+  ]
+}

@@ -9,6 +9,7 @@ authors:
   - name: "Henry Hölzemann"
   - name: "Torsten Fiolka"
 venue: "WACV 2025"
+venue_note: "Poster"
 resources:
   - label: "Paper"
     detail: "CVF Open Access"

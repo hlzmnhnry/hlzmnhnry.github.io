@@ -65,7 +65,7 @@
   function resetPreview() {
     selectedPreview = null;
     previewImage.src = placeholderImage;
-    previewImage.alt = 'Placeholder for an LTC data preview';
+    previewImage.alt = 'Map illustration shown before a preview point is selected';
     previewRoute.textContent = 'Data preview';
     previewTitle.textContent = 'Select a point';
     previewCaption.textContent = 'Click one of the numbered markers to inspect a sample location.';

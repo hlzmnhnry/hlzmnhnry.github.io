@@ -887,7 +887,7 @@ a.conference_badge:hover { background: var(--surface-raised); }
 }
 
 .route_map {
-  height: 520px;
+  height: 600px;
   background: #d8d8d3;
   cursor: grab;
 }
@@ -982,7 +982,7 @@ a.conference_badge:hover { background: var(--surface-raised); }
 }
 
 .route_preview__media {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 11;
   overflow: hidden;
   background: var(--surface-raised);
   border-bottom: 1px solid var(--line);
@@ -1075,8 +1075,6 @@ a.conference_badge:hover { background: var(--surface-raised); }
 }
 
 .route_preview__coordinates[hidden] { display: none; }
-
-.route_preview__coordinates div:last-child { grid-column: 1 / -1; }
 
 .route_preview__coordinates dt {
   color: var(--text-faint);

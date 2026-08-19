@@ -17,6 +17,7 @@
   var previewCoordinates = explorer.querySelector('[data-preview-coordinates]');
   var previewX = explorer.querySelector('[data-preview-x]');
   var previewY = explorer.querySelector('[data-preview-y]');
+  var previewZ = explorer.querySelector('[data-preview-z]');
   var mapDataUrl = explorer.dataset.mapData;
   var previewDataUrl = explorer.dataset.previewData;
   var placeholderImage = previewImage.getAttribute('src');
@@ -47,6 +48,13 @@
     return new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 }).format(value);
   }
 
+  function formatAltitude(value) {
+    return new Intl.NumberFormat('en-US', {
+      minimumFractionDigits: 1,
+      maximumFractionDigits: 1
+    }).format(value);
+  }
+
   function setSelectedMarker(previewId) {
     markerEntries.forEach(function (entry) {
       var markerElement = entry.marker.getElement();
@@ -64,6 +72,7 @@
     previewCampaigns.hidden = true;
     previewCampaignOptions.replaceChildren();
     previewCoordinates.hidden = true;
+    previewZ.textContent = '—';
     setSelectedMarker(null);
   }
 
@@ -75,6 +84,9 @@
     previewCaption.textContent = sample && sample.caption
       ? sample.caption
       : campaign.season + ' campaign · preview image coming soon.';
+    previewZ.textContent = sample && Number.isFinite(sample.z)
+      ? formatAltitude(sample.z) + ' m'
+      : '—';
 
     previewCampaignOptions.querySelectorAll('button').forEach(function (button) {
       var isActive = button.dataset.campaignId === campaign.id;

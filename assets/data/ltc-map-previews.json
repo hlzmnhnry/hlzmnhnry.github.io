@@ -2,14 +2,38 @@
   "crs": "EPSG:25832",
   "campaigns": {
     "route-a": [
-      { "id": "22-02-23-11", "label": "22-02-23 · 11:45", "season": "Winter" },
-      { "id": "22-02-23-15", "label": "22-02-23 · 15:53", "season": "Winter" },
-      { "id": "22-06-10", "label": "22-06-10", "season": "Summer" }
+      {
+        "id": "22-02-23-11",
+        "label": "22-02-23 · 11:45",
+        "season": "Winter"
+      },
+      {
+        "id": "22-02-23-15",
+        "label": "22-02-23 · 15:53",
+        "season": "Winter"
+      },
+      {
+        "id": "22-06-10",
+        "label": "22-06-10",
+        "season": "Summer"
+      }
     ],
     "route-b": [
-      { "id": "22-06-14", "label": "22-06-14", "season": "Summer" },
-      { "id": "22-10-19", "label": "22-10-19", "season": "Autumn" },
-      { "id": "24-01-29", "label": "24-01-29", "season": "Winter" }
+      {
+        "id": "22-06-14",
+        "label": "22-06-14",
+        "season": "Summer"
+      },
+      {
+        "id": "22-10-19",
+        "label": "22-10-19",
+        "season": "Autumn"
+      },
+      {
+        "id": "24-01-29",
+        "label": "24-01-29",
+        "season": "Winter"
+      }
     ]
   },
   "previews": [
@@ -21,9 +45,21 @@
       "y": 5604218.89,
       "defaultCampaign": "22-02-23-11",
       "images": {
-        "22-02-23-11": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Winter campaign · dummy preview for this location." },
-        "22-02-23-15": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Later winter flight · dummy preview for this location." },
-        "22-06-10": { "image": "/assets/ltc/previews/placeholder-summer.svg", "caption": "Summer campaign · dummy preview for this location." }
+        "22-02-23-11": {
+          "image": "/assets/ltc/previews/route-a-preview-1--22-02-23-11.webp",
+          "caption": "Winter campaign · nearest camera frame to this location.",
+          "z": 468.34
+        },
+        "22-02-23-15": {
+          "image": "/assets/ltc/previews/route-a-preview-1--22-02-23-15.webp",
+          "caption": "Winter campaign · nearest camera frame to this location.",
+          "z": 412.47
+        },
+        "22-06-10": {
+          "image": "/assets/ltc/previews/route-a-preview-1--22-06-10.webp",
+          "caption": "Summer campaign · nearest camera frame to this location.",
+          "z": 521.48
+        }
       }
     },
     {
@@ -34,9 +70,21 @@
       "y": 5620551.53,
       "defaultCampaign": "22-02-23-11",
       "images": {
-        "22-02-23-11": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Winter campaign · dummy preview for this location." },
-        "22-02-23-15": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Later winter flight · dummy preview for this location." },
-        "22-06-10": { "image": "/assets/ltc/previews/placeholder-summer.svg", "caption": "Summer campaign · dummy preview for this location." }
+        "22-02-23-11": {
+          "image": "/assets/ltc/previews/route-a-preview-2--22-02-23-11.webp",
+          "caption": "Winter campaign · nearest camera frame to this location.",
+          "z": 651.38
+        },
+        "22-02-23-15": {
+          "image": "/assets/ltc/previews/route-a-preview-2--22-02-23-15.webp",
+          "caption": "Winter campaign · nearest camera frame to this location.",
+          "z": 667.92
+        },
+        "22-06-10": {
+          "image": "/assets/ltc/previews/route-a-preview-2--22-06-10.webp",
+          "caption": "Summer campaign · nearest camera frame to this location.",
+          "z": 704.91
+        }
       }
     },
     {
@@ -47,9 +95,21 @@
       "y": 5603150.84,
       "defaultCampaign": "22-02-23-11",
       "images": {
-        "22-02-23-11": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Winter campaign · dummy preview for this location." },
-        "22-02-23-15": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Later winter flight · dummy preview for this location." },
-        "22-06-10": { "image": "/assets/ltc/previews/placeholder-summer.svg", "caption": "Summer campaign · dummy preview for this location." }
+        "22-02-23-11": {
+          "image": "/assets/ltc/previews/route-a-preview-3--22-02-23-11.webp",
+          "caption": "Winter campaign · nearest camera frame to this location.",
+          "z": 562.96
+        },
+        "22-02-23-15": {
+          "image": "/assets/ltc/previews/route-a-preview-3--22-02-23-15.webp",
+          "caption": "Winter campaign · nearest camera frame to this location.",
+          "z": 612.51
+        },
+        "22-06-10": {
+          "image": "/assets/ltc/previews/route-a-preview-3--22-06-10.webp",
+          "caption": "Summer campaign · nearest camera frame to this location.",
+          "z": 575.6
+        }
       }
     },
     {
@@ -60,9 +120,21 @@
       "y": 5581897.24,
       "defaultCampaign": "22-02-23-11",
       "images": {
-        "22-02-23-11": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Winter campaign · dummy preview for this location." },
-        "22-02-23-15": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Later winter flight · dummy preview for this location." },
-        "22-06-10": { "image": "/assets/ltc/previews/placeholder-summer.svg", "caption": "Summer campaign · dummy preview for this location." }
+        "22-02-23-11": {
+          "image": "/assets/ltc/previews/route-a-preview-4--22-02-23-11.webp",
+          "caption": "Winter campaign · nearest camera frame to this location.",
+          "z": 912.72
+        },
+        "22-02-23-15": {
+          "image": "/assets/ltc/previews/route-a-preview-4--22-02-23-15.webp",
+          "caption": "Winter campaign · nearest camera frame to this location.",
+          "z": 911.92
+        },
+        "22-06-10": {
+          "image": "/assets/ltc/previews/route-a-preview-4--22-06-10.webp",
+          "caption": "Summer campaign · nearest camera frame to this location.",
+          "z": 945.12
+        }
       }
     },
     {
@@ -73,9 +145,21 @@
       "y": 5593721.82,
       "defaultCampaign": "22-02-23-11",
       "images": {
-        "22-02-23-11": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Winter campaign · dummy preview for this location." },
-        "22-02-23-15": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Later winter flight · dummy preview for this location." },
-        "22-06-10": { "image": "/assets/ltc/previews/placeholder-summer.svg", "caption": "Summer campaign · dummy preview for this location." }
+        "22-02-23-11": {
+          "image": "/assets/ltc/previews/route-a-preview-5--22-02-23-11.webp",
+          "caption": "Winter campaign · nearest camera frame to this location.",
+          "z": 522.59
+        },
+        "22-02-23-15": {
+          "image": "/assets/ltc/previews/route-a-preview-5--22-02-23-15.webp",
+          "caption": "Winter campaign · nearest camera frame to this location.",
+          "z": 538.62
+        },
+        "22-06-10": {
+          "image": "/assets/ltc/previews/route-a-preview-5--22-06-10.webp",
+          "caption": "Summer campaign · nearest camera frame to this location.",
+          "z": 586.14
+        }
       }
     },
     {
@@ -86,9 +170,21 @@
       "y": 5653635.76,
       "defaultCampaign": "22-10-19",
       "images": {
-        "22-06-14": { "image": "/assets/ltc/previews/placeholder-summer.svg", "caption": "Summer campaign · dummy preview for this location." },
-        "22-10-19": { "image": "/assets/ltc/previews/placeholder-autumn.svg", "caption": "Autumn campaign · dummy preview for this location." },
-        "24-01-29": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Winter campaign · dummy preview for this location." }
+        "22-06-14": {
+          "image": "/assets/ltc/previews/route-b-preview-1--22-06-14.webp",
+          "caption": "Summer campaign · nearest camera frame to this location.",
+          "z": 439.98
+        },
+        "22-10-19": {
+          "image": "/assets/ltc/previews/route-b-preview-1--22-10-19.webp",
+          "caption": "Autumn campaign · nearest camera frame to this location.",
+          "z": 430.92
+        },
+        "24-01-29": {
+          "image": "/assets/ltc/previews/route-b-preview-1--24-01-29.webp",
+          "caption": "Winter campaign · nearest camera frame to this location.",
+          "z": 437.86
+        }
       }
     },
     {
@@ -99,9 +195,21 @@
       "y": 5673374.07,
       "defaultCampaign": "22-10-19",
       "images": {
-        "22-06-14": { "image": "/assets/ltc/previews/placeholder-summer.svg", "caption": "Summer campaign · dummy preview for this location." },
-        "22-10-19": { "image": "/assets/ltc/previews/placeholder-autumn.svg", "caption": "Autumn campaign · dummy preview for this location." },
-        "24-01-29": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Winter campaign · dummy preview for this location." }
+        "22-06-14": {
+          "image": "/assets/ltc/previews/route-b-preview-2--22-06-14.webp",
+          "caption": "Summer campaign · nearest camera frame to this location.",
+          "z": 865.61
+        },
+        "22-10-19": {
+          "image": "/assets/ltc/previews/route-b-preview-2--22-10-19.webp",
+          "caption": "Autumn campaign · nearest camera frame to this location.",
+          "z": 711.98
+        },
+        "24-01-29": {
+          "image": "/assets/ltc/previews/route-b-preview-2--24-01-29.webp",
+          "caption": "Winter campaign · nearest camera frame to this location.",
+          "z": 776.15
+        }
       }
     },
     {
@@ -112,9 +220,21 @@
       "y": 5678610.66,
       "defaultCampaign": "22-10-19",
       "images": {
-        "22-06-14": { "image": "/assets/ltc/previews/placeholder-summer.svg", "caption": "Summer campaign · dummy preview for this location." },
-        "22-10-19": { "image": "/assets/ltc/previews/placeholder-autumn.svg", "caption": "Autumn campaign · dummy preview for this location." },
-        "24-01-29": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Winter campaign · dummy preview for this location." }
+        "22-06-14": {
+          "image": "/assets/ltc/previews/route-b-preview-3--22-06-14.webp",
+          "caption": "Summer campaign · nearest camera frame to this location.",
+          "z": 1082.36
+        },
+        "22-10-19": {
+          "image": "/assets/ltc/previews/route-b-preview-3--22-10-19.webp",
+          "caption": "Autumn campaign · nearest camera frame to this location.",
+          "z": 1080.69
+        },
+        "24-01-29": {
+          "image": "/assets/ltc/previews/route-b-preview-3--24-01-29.webp",
+          "caption": "Winter campaign · nearest camera frame to this location.",
+          "z": 1239.21
+        }
       }
     },
     {
@@ -125,9 +245,21 @@
       "y": 5648711.9,
       "defaultCampaign": "22-10-19",
       "images": {
-        "22-06-14": { "image": "/assets/ltc/previews/placeholder-summer.svg", "caption": "Summer campaign · dummy preview for this location." },
-        "22-10-19": { "image": "/assets/ltc/previews/placeholder-autumn.svg", "caption": "Autumn campaign · dummy preview for this location." },
-        "24-01-29": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Winter campaign · dummy preview for this location." }
+        "22-06-14": {
+          "image": "/assets/ltc/previews/route-b-preview-4--22-06-14.webp",
+          "caption": "Summer campaign · nearest camera frame to this location.",
+          "z": 1057.14
+        },
+        "22-10-19": {
+          "image": "/assets/ltc/previews/route-b-preview-4--22-10-19.webp",
+          "caption": "Autumn campaign · nearest camera frame to this location.",
+          "z": 1078.86
+        },
+        "24-01-29": {
+          "image": "/assets/ltc/previews/route-b-preview-4--24-01-29.webp",
+          "caption": "Winter campaign · nearest camera frame to this location.",
+          "z": 1138.68
+        }
       }
     },
     {
@@ -138,9 +270,21 @@
       "y": 5623084.95,
       "defaultCampaign": "22-10-19",
       "images": {
-        "22-06-14": { "image": "/assets/ltc/previews/placeholder-summer.svg", "caption": "Summer campaign · dummy preview for this location." },
-        "22-10-19": { "image": "/assets/ltc/previews/placeholder-autumn.svg", "caption": "Autumn campaign · dummy preview for this location." },
-        "24-01-29": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Winter campaign · dummy preview for this location." }
+        "22-06-14": {
+          "image": "/assets/ltc/previews/route-b-preview-5--22-06-14.webp",
+          "caption": "Summer campaign · nearest camera frame to this location.",
+          "z": 704.19
+        },
+        "22-10-19": {
+          "image": "/assets/ltc/previews/route-b-preview-5--22-10-19.webp",
+          "caption": "Autumn campaign · nearest camera frame to this location.",
+          "z": 705.33
+        },
+        "24-01-29": {
+          "image": "/assets/ltc/previews/route-b-preview-5--24-01-29.webp",
+          "caption": "Winter campaign · nearest camera frame to this location.",
+          "z": 719.32
+        }
       }
     }
   ]

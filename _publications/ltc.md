@@ -62,7 +62,7 @@ The dataset includes multiple flight sequences together with calibration data, s
 
 ## Explore the flight routes
 
-The two repeatedly flown routes can be inspected together or individually. Select one of the numbered points to open a data preview; the current images are placeholders and can later be replaced with samples from the corresponding coordinates.
+The two repeatedly flown routes can be inspected together or individually. Select one of the numbered points and switch between the available flight campaigns to compare the nearest recorded camera frames across seasons.
 
 <div class="route_explorer" data-ltc-map data-map-data="{{ '/assets/data/ltc-map-data.json' | relative_url }}" data-preview-data="{{ '/assets/data/ltc-map-previews.json' | relative_url }}">
   <div class="route_explorer__toolbar">
@@ -89,7 +89,7 @@ The two repeatedly flown routes can be inspected together or individually. Selec
     <div class="route_map" data-route-map role="application" aria-label="Interactive map of the Leaving the City flight routes"></div>
     <aside class="route_preview" data-route-preview aria-live="polite">
       <div class="route_preview__media">
-        <img data-preview-image src="{{ '/assets/ltc/previews/placeholder.svg' | relative_url }}" alt="Placeholder for an LTC data preview">
+        <img data-preview-image src="{{ '/assets/ltc/previews/placeholder.svg' | relative_url }}" alt="Placeholder for an LTC data preview" decoding="async">
       </div>
       <div class="route_preview__content">
         <span class="route_preview__eyebrow" data-preview-route>Data preview</span>
@@ -103,6 +103,7 @@ The two repeatedly flown routes can be inspected together or individually. Selec
           <div><dt>X</dt><dd data-preview-x>—</dd></div>
           <div><dt>Y</dt><dd data-preview-y>—</dd></div>
           <div><dt>CRS</dt><dd>EPSG:25832</dd></div>
+          <div><dt>Z</dt><dd data-preview-z>—</dd></div>
         </dl>
       </div>
     </aside>

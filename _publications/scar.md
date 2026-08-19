@@ -31,4 +31,25 @@ Visual–inertial state estimation depends on stable intrinsic and extrinsic cal
   <li><img src="/assets/icons/arxiv.svg" class="resource_icon" alt=""><span class="resource_label">Paper</span><a href="https://arxiv.org/abs/2602.16349">arxiv.org/abs/2602.16349</a></li>
   <li><img src="/assets/icons/github.svg" class="resource_icon" alt=""><span class="resource_label">Code</span><a href="https://github.com/hlzmnhnry/scar">github.com/hlzmnhnry/scar</a></li>
   <li><img src="/assets/icons/owncloud.svg" class="resource_icon" alt=""><span class="resource_label">Data</span><a href="https://owncloud.fraunhofer.de/index.php/s/Cf7U6xfx5YHMRSs">owncloud.fraunhofer.de/Cf7U6xfx5YHMRSs</a></li>
+  <li><img src="/assets/icons/poster.svg" class="resource_icon" alt=""><span class="resource_label">Poster</span><a href="{{ '/assets/poster/scar_poster.pdf' | relative_url }}" download>Download poster <span class="file_size">(PDF · 19 MiB)</span></a></li>
 </ul>
+
+## Citation
+
+<div class="citation_card">
+  <p class="citation_card__entry"><strong>Henry Hölzemann and Michael Schleiss.</strong> “SCAR: Satellite Imagery-Based Calibration for Aerial Recordings.” In <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops</em>, pp. 987–996, June 2026.</p>
+  <details class="citation_card__bibtex">
+    <summary>Show BibTeX</summary>
+    <div class="citation_card__code">
+      <button class="citation_copy" type="button" data-copy-target="citation-scar">Copy</button>
+      <pre id="citation-scar"><code>@InProceedings{Holzemann_2026_CVPR,
+  author    = {H\"olzemann, Henry and Schleiss, Michael},
+  title     = {SCAR: Satellite Imagery-Based Calibration for Aerial Recordings},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+  month     = {June},
+  year      = {2026},
+  pages     = {987--996}
+}</code></pre>
+    </div>
+  </details>
+</div>

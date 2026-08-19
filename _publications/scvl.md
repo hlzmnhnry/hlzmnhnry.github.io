@@ -26,4 +26,25 @@ Image-retrieval-based visual localization can become computationally expensive o
 <ul class="resource_list">
   <li><img src="/assets/icons/scholar.svg" class="resource_icon" alt=""><span class="resource_label">Paper</span><a href="https://scholar.google.com/citations?view_op=view_citation&hl=de&user=ZziPa9YAAAAJ&citation_for_view=ZziPa9YAAAAJ:2osOgNQ5qMEC">scholar.google.com</a></li>
   <li><img src="/assets/icons/github.svg" class="resource_icon" alt=""><span class="resource_label">Code</span><a href="https://github.com/hlzmnhnry/sc-vl">github.com/hlzmnhnry/sc-vl</a></li>
+  <li><img src="/assets/icons/poster.svg" class="resource_icon" alt=""><span class="resource_label">Poster</span><a href="{{ '/assets/poster/scvl_poster.pdf' | relative_url }}" download>Download poster <span class="file_size">(PDF · 33 MiB)</span></a></li>
 </ul>
+
+## Citation
+
+<div class="citation_card">
+  <p class="citation_card__entry"><strong>Henry Hölzemann and Torsten Fiolka.</strong> “Semantic Clustering of Image Retrieval Databases used for Visual Localization.” In <em>2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)</em>, pp. 6998–7007. IEEE, 2025.</p>
+  <details class="citation_card__bibtex">
+    <summary>Show BibTeX</summary>
+    <div class="citation_card__code">
+      <button class="citation_copy" type="button" data-copy-target="citation-scvl">Copy</button>
+      <pre id="citation-scvl"><code>@inproceedings{holzemann2025semantic,
+  title        = {Semantic Clustering of Image Retrieval Databases used for Visual Localization},
+  author       = {H{\"o}lzemann, Henry and Fiolka, Torsten},
+  booktitle    = {2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  pages        = {6998--7007},
+  year         = {2025},
+  organization = {IEEE}
+}</code></pre>
+    </div>
+  </details>
+</div>

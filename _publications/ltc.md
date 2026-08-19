@@ -4,6 +4,7 @@ date: 2026-06-26
 category: Paper
 image: /assets/ltc_white.png
 image_dark: /assets/ltc_black.png
+interactive_map: true
 ---
 
 Leaving the City (LTC) is a large-scale aerial dataset for cross-season localization in unstructured environments.
@@ -20,6 +21,98 @@ LTC provides aerial recordings captured across multiple seasons and environmenta
 The dataset includes multiple flight sequences together with calibration data, sensor metadata, aerial imagery, semantic coverage information, and land-cover annotations.
 
 <span class="conference_badge">Accepted at ECCV 2026</span>
+
+## Dataset at a glance
+
+<p class="dataset_stats__intro">Repeated aerial recordings across western Germany capture long-term appearance change at a scale that supports both aggregate and terrain-aware evaluation.</p>
+
+<dl class="dataset_stats" aria-label="Key statistics of the Leaving the City dataset">
+  <div class="dataset_stat">
+    <span class="dataset_stat__index" aria-hidden="true">01</span>
+    <dt>1,379 <span>km</span></dt>
+    <dd class="dataset_stat__label">Flight trajectories</dd>
+    <dd class="dataset_stat__note">Across repeatedly flown routes</dd>
+  </div>
+  <div class="dataset_stat">
+    <span class="dataset_stat__index" aria-hidden="true">02</span>
+    <dt>1.65 <span>M</span></dt>
+    <dd class="dataset_stat__label">Aerial images</dd>
+    <dd class="dataset_stat__note">Global-shutter grayscale imagery</dd>
+  </div>
+  <div class="dataset_stat">
+    <span class="dataset_stat__index" aria-hidden="true">03</span>
+    <dt>3</dt>
+    <dd class="dataset_stat__label">Seasons</dd>
+    <dd class="dataset_stat__note">Winter · summer · autumn</dd>
+  </div>
+  <div class="dataset_stat">
+    <span class="dataset_stat__index" aria-hidden="true">04</span>
+    <dt>6</dt>
+    <dd class="dataset_stat__label">Flight campaigns</dd>
+    <dd class="dataset_stat__note">February 2022 – January 2024</dd>
+  </div>
+</dl>
+
+<ul class="dataset_facts" aria-label="Additional dataset details">
+  <li><strong>2 routes</strong><span>approximately 125 km and 335 km</span></li>
+  <li><strong>9 h 48 min</strong><span>total recorded flight time</span></li>
+  <li><strong>4 terrain classes</strong><span>artificial, agricultural, forest, water</span></li>
+  <li><strong>50 / 200 Hz</strong><span>camera / inertial data and 6-DoF ground truth</span></li>
+</ul>
+
+## Explore the flight routes
+
+The two repeatedly flown routes can be inspected together or individually. Select one of the numbered points to open a data preview; the current images are placeholders and can later be replaced with samples from the corresponding coordinates.
+
+<div class="route_explorer" data-ltc-map data-map-data="{{ '/assets/data/ltc-map-data.json' | relative_url }}" data-preview-data="{{ '/assets/data/ltc-map-previews.json' | relative_url }}">
+  <div class="route_explorer__toolbar">
+    <div class="route_explorer__toggles" role="group" aria-label="Visible flight routes">
+      <button class="route_toggle route_toggle--a" type="button" data-route-toggle="route-a" aria-pressed="true" disabled>
+        <span class="route_toggle__swatch" aria-hidden="true"></span>
+        <span><strong>Route A</strong><small>Short · approximately 125 km</small></span>
+      </button>
+      <button class="route_toggle route_toggle--b" type="button" data-route-toggle="route-b" aria-pressed="true" disabled>
+        <span class="route_toggle__swatch" aria-hidden="true"></span>
+        <span><strong>Route B</strong><small>Long · approximately 335 km</small></span>
+      </button>
+    </div>
+    <div class="route_explorer__actions">
+      <div class="map_style_switch" role="group" aria-label="Map background">
+        <button type="button" data-background-toggle="satellite" aria-pressed="true" disabled>Satellite</button>
+        <button type="button" data-background-toggle="clc" aria-pressed="false" disabled>Land cover</button>
+      </div>
+      <button class="route_fit" type="button" data-route-fit disabled>Fit visible routes</button>
+    </div>
+  </div>
+
+  <div class="route_explorer__body">
+    <div class="route_map" data-route-map role="application" aria-label="Interactive map of the Leaving the City flight routes"></div>
+    <aside class="route_preview" data-route-preview aria-live="polite">
+      <div class="route_preview__media">
+        <img data-preview-image src="{{ '/assets/ltc/previews/placeholder.svg' | relative_url }}" alt="Placeholder for an LTC data preview">
+      </div>
+      <div class="route_preview__content">
+        <span class="route_preview__eyebrow" data-preview-route>Data preview</span>
+        <h3 data-preview-title>Select a point</h3>
+        <p data-preview-caption>Click one of the numbered markers to inspect a sample location.</p>
+        <div class="route_preview__campaigns" data-preview-campaigns hidden>
+          <span>Campaign</span>
+          <div class="route_preview__campaign_options" data-preview-campaign-options role="group" aria-label="Preview campaign"></div>
+        </div>
+        <dl class="route_preview__coordinates" data-preview-coordinates hidden>
+          <div><dt>X</dt><dd data-preview-x>—</dd></div>
+          <div><dt>Y</dt><dd data-preview-y>—</dd></div>
+          <div><dt>CRS</dt><dd>EPSG:25832</dd></div>
+        </dl>
+      </div>
+    </aside>
+  </div>
+
+  <p class="route_explorer__status" data-route-status>Loading interactive map…</p>
+  <noscript><p class="route_explorer__status">JavaScript is required to use the interactive route viewer.</p></noscript>
+</div>
+
+<p class="route_explorer__source">Satellite background: <a href="https://sgx.geodatenzentrum.de/wms_sentinel2_de">Sentinel2-DE RGB (2019)</a> — European Union, contains Copernicus Sentinel-2 data 2019, processed by the Bundesamt für Kartographie und Geodäsie (BKG). Land-cover background: <a href="https://sgx.geodatenzentrum.de/wms_clc5_2018">CORINE Land Cover – 5ha (2018)</a>, © BKG 2026, licensed under <a href="https://www.govdata.de/dl-de/by-2-0">dl-de/by-2.0</a>.</p>
 
 ## Abstract
 
@@ -40,6 +133,12 @@ To help you understand and work with our dataset, we provide the following resou
 </ul>
 
 For questions, download problems, or issues with the dataset, please open an issue in the <a href="https://github.com/hlzmnhnry/pygeon/issues">Pygeon repository</a>.
+
+## Citation
+
+<div class="citation_card citation_card--pending">
+  <p>Coming soon.</p>
+</div>
 
 ## Dataset Download
 

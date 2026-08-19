@@ -1,0 +1,147 @@
+{
+  "crs": "EPSG:25832",
+  "campaigns": {
+    "route-a": [
+      { "id": "22-02-23-11", "label": "22-02-23 · 11:45", "season": "Winter" },
+      { "id": "22-02-23-15", "label": "22-02-23 · 15:53", "season": "Winter" },
+      { "id": "22-06-10", "label": "22-06-10", "season": "Summer" }
+    ],
+    "route-b": [
+      { "id": "22-06-14", "label": "22-06-14", "season": "Summer" },
+      { "id": "22-10-19", "label": "22-10-19", "season": "Autumn" },
+      { "id": "24-01-29", "label": "24-01-29", "season": "Winter" }
+    ]
+  },
+  "previews": [
+    {
+      "id": "route-a-preview-1",
+      "routeId": "route-a",
+      "label": "Route A · Preview 01",
+      "x": 374958.38,
+      "y": 5604218.89,
+      "defaultCampaign": "22-02-23-11",
+      "images": {
+        "22-02-23-11": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Winter campaign · dummy preview for this location." },
+        "22-02-23-15": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Later winter flight · dummy preview for this location." },
+        "22-06-10": { "image": "/assets/ltc/previews/placeholder-summer.svg", "caption": "Summer campaign · dummy preview for this location." }
+      }
+    },
+    {
+      "id": "route-a-preview-2",
+      "routeId": "route-a",
+      "label": "Route A · Preview 02",
+      "x": 364257.36,
+      "y": 5620551.53,
+      "defaultCampaign": "22-02-23-11",
+      "images": {
+        "22-02-23-11": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Winter campaign · dummy preview for this location." },
+        "22-02-23-15": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Later winter flight · dummy preview for this location." },
+        "22-06-10": { "image": "/assets/ltc/previews/placeholder-summer.svg", "caption": "Summer campaign · dummy preview for this location." }
+      }
+    },
+    {
+      "id": "route-a-preview-3",
+      "routeId": "route-a",
+      "label": "Route A · Preview 03",
+      "x": 362728.75,
+      "y": 5603150.84,
+      "defaultCampaign": "22-02-23-11",
+      "images": {
+        "22-02-23-11": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Winter campaign · dummy preview for this location." },
+        "22-02-23-15": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Later winter flight · dummy preview for this location." },
+        "22-06-10": { "image": "/assets/ltc/previews/placeholder-summer.svg", "caption": "Summer campaign · dummy preview for this location." }
+      }
+    },
+    {
+      "id": "route-a-preview-4",
+      "routeId": "route-a",
+      "label": "Route A · Preview 04",
+      "x": 364965.33,
+      "y": 5581897.24,
+      "defaultCampaign": "22-02-23-11",
+      "images": {
+        "22-02-23-11": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Winter campaign · dummy preview for this location." },
+        "22-02-23-15": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Later winter flight · dummy preview for this location." },
+        "22-06-10": { "image": "/assets/ltc/previews/placeholder-summer.svg", "caption": "Summer campaign · dummy preview for this location." }
+      }
+    },
+    {
+      "id": "route-a-preview-5",
+      "routeId": "route-a",
+      "label": "Route A · Preview 05",
+      "x": 381454.63,
+      "y": 5593721.82,
+      "defaultCampaign": "22-02-23-11",
+      "images": {
+        "22-02-23-11": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Winter campaign · dummy preview for this location." },
+        "22-02-23-15": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Later winter flight · dummy preview for this location." },
+        "22-06-10": { "image": "/assets/ltc/previews/placeholder-summer.svg", "caption": "Summer campaign · dummy preview for this location." }
+      }
+    },
+    {
+      "id": "route-b-preview-1",
+      "routeId": "route-b",
+      "label": "Route B · Preview 01",
+      "x": 347293.12,
+      "y": 5653635.76,
+      "defaultCampaign": "22-10-19",
+      "images": {
+        "22-06-14": { "image": "/assets/ltc/previews/placeholder-summer.svg", "caption": "Summer campaign · dummy preview for this location." },
+        "22-10-19": { "image": "/assets/ltc/previews/placeholder-autumn.svg", "caption": "Autumn campaign · dummy preview for this location." },
+        "24-01-29": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Winter campaign · dummy preview for this location." }
+      }
+    },
+    {
+      "id": "route-b-preview-2",
+      "routeId": "route-b",
+      "label": "Route B · Preview 02",
+      "x": 384555.78,
+      "y": 5673374.07,
+      "defaultCampaign": "22-10-19",
+      "images": {
+        "22-06-14": { "image": "/assets/ltc/previews/placeholder-summer.svg", "caption": "Summer campaign · dummy preview for this location." },
+        "22-10-19": { "image": "/assets/ltc/previews/placeholder-autumn.svg", "caption": "Autumn campaign · dummy preview for this location." },
+        "24-01-29": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Winter campaign · dummy preview for this location." }
+      }
+    },
+    {
+      "id": "route-b-preview-3",
+      "routeId": "route-b",
+      "label": "Route B · Preview 03",
+      "x": 437922.1,
+      "y": 5678610.66,
+      "defaultCampaign": "22-10-19",
+      "images": {
+        "22-06-14": { "image": "/assets/ltc/previews/placeholder-summer.svg", "caption": "Summer campaign · dummy preview for this location." },
+        "22-10-19": { "image": "/assets/ltc/previews/placeholder-autumn.svg", "caption": "Autumn campaign · dummy preview for this location." },
+        "24-01-29": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Winter campaign · dummy preview for this location." }
+      }
+    },
+    {
+      "id": "route-b-preview-4",
+      "routeId": "route-b",
+      "label": "Route B · Preview 04",
+      "x": 440272.64,
+      "y": 5648711.9,
+      "defaultCampaign": "22-10-19",
+      "images": {
+        "22-06-14": { "image": "/assets/ltc/previews/placeholder-summer.svg", "caption": "Summer campaign · dummy preview for this location." },
+        "22-10-19": { "image": "/assets/ltc/previews/placeholder-autumn.svg", "caption": "Autumn campaign · dummy preview for this location." },
+        "24-01-29": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Winter campaign · dummy preview for this location." }
+      }
+    },
+    {
+      "id": "route-b-preview-5",
+      "routeId": "route-b",
+      "label": "Route B · Preview 05",
+      "x": 393416.39,
+      "y": 5623084.95,
+      "defaultCampaign": "22-10-19",
+      "images": {
+        "22-06-14": { "image": "/assets/ltc/previews/placeholder-summer.svg", "caption": "Summer campaign · dummy preview for this location." },
+        "22-10-19": { "image": "/assets/ltc/previews/placeholder-autumn.svg", "caption": "Autumn campaign · dummy preview for this location." },
+        "24-01-29": { "image": "/assets/ltc/previews/placeholder-winter.svg", "caption": "Winter campaign · dummy preview for this location." }
+      }
+    }
+  ]
+}

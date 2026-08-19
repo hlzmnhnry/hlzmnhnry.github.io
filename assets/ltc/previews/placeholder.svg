@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title description">
+  <title id="title">Placeholder data preview</title>
+  <desc id="description">Abstract grayscale aerial landscape used until a real LTC sample image is provided.</desc>
+  <rect width="800" height="500" fill="#d8d8d4"/>
+  <path d="M0 24 244 0l82 188L0 248Z" fill="#b8b8b2"/>
+  <path d="m244 0 292 0-42 198-168-10Z" fill="#ecece8"/>
+  <path d="m536 0 264 0v220l-306-22Z" fill="#c6c6c0"/>
+  <path d="M0 248 326 188l54 312H0Z" fill="#e8e8e4"/>
+  <path d="m326 188 168 10 100 302H380Z" fill="#ababaa"/>
+  <path d="m494 198 306 22v280H594Z" fill="#deded9"/>
+  <path d="M-40 430C174 350 309 334 840 132" fill="none" stroke="#fafaf8" stroke-width="28"/>
+  <path d="M-40 430C174 350 309 334 840 132" fill="none" stroke="#7e7e79" stroke-width="3" stroke-dasharray="14 12"/>
+  <g fill="#8d8d88" opacity=".66">
+    <circle cx="94" cy="90" r="8"/><circle cx="126" cy="116" r="12"/><circle cx="168" cy="76" r="10"/>
+    <circle cx="636" cy="326" r="14"/><circle cx="682" cy="302" r="9"/><circle cx="718" cy="354" r="12"/>
+  </g>
+  <rect x="242" y="207" width="316" height="86" rx="2" fill="#111" opacity=".82"/>
+  <text x="400" y="247" fill="#fff" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">DATA PREVIEW</text>
+  <text x="400" y="272" fill="#d7d7d3" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">Replace with an LTC sample image</text>
+</svg>

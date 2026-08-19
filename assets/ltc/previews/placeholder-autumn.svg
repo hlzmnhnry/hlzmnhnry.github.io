@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title description">
+  <title id="title">Autumn campaign placeholder</title>
+  <desc id="description">Abstract grayscale aerial landscape used until a real LTC autumn sample is provided.</desc>
+  <rect width="800" height="500" fill="#bdbdb8"/>
+  <path d="M0 0h252l76 196L0 238Z" fill="#969691"/>
+  <path d="M252 0h290l-44 204-170-8Z" fill="#dededa"/>
+  <path d="M542 0h258v226l-302-22Z" fill="#adada7"/>
+  <path d="M0 238l328-42 48 304H0Z" fill="#d5d5d1"/>
+  <path d="m328 196 170 8 98 296H376Z" fill="#858580"/>
+  <path d="m498 204 302 22v274H596Z" fill="#c9c9c4"/>
+  <g fill="#6e6e69" opacity=".78"><circle cx="98" cy="86" r="13"/><circle cx="132" cy="118" r="10"/><circle cx="168" cy="74" r="15"/><circle cx="652" cy="324" r="16"/><circle cx="702" cy="350" r="12"/></g>
+  <path d="M-40 426C170 362 334 332 842 136" fill="none" stroke="#ededE9" stroke-width="28"/>
+  <path d="M-40 426C170 362 334 332 842 136" fill="none" stroke="#696964" stroke-width="3" stroke-dasharray="14 12"/>
+  <rect x="248" y="206" width="304" height="88" rx="2" fill="#111" opacity=".84"/>
+  <text x="400" y="247" fill="#fff" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">AUTUMN PREVIEW</text>
+  <text x="400" y="273" fill="#d7d7d3" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">Replace with the matching LTC sample</text>
+</svg>

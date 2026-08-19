@@ -1,9 +1,33 @@
 ---
 title: "SCAR"
+paper_title: "SCAR: Satellite Imagery-Based Calibration for Aerial Recordings"
 date: 2026-04-07
 category: Paper
 image: /assets/scar_white.png
 image_dark: /assets/scar_black.png
+authors:
+  - name: "Henry Hölzemann"
+  - name: "Michael Schleiss"
+venue: "CVPR 2026 Workshops"
+venue_note: "VOCVALC"
+resources:
+  - label: "Paper"
+    detail: "arXiv"
+    icon: /assets/icons/arxiv.svg
+    url: "https://arxiv.org/abs/2602.16349"
+  - label: "Code"
+    detail: "GitHub"
+    icon: /assets/icons/github.svg
+    url: "https://github.com/hlzmnhnry/scar"
+  - label: "Data"
+    detail: "OwnCloud"
+    icon: /assets/icons/owncloud.svg
+    url: "https://owncloud.fraunhofer.de/index.php/s/Cf7U6xfx5YHMRSs"
+  - label: "Poster"
+    detail: "PDF · 19 MiB"
+    icon: /assets/icons/poster.svg
+    url: /assets/poster/scar_poster.pdf
+    download: true
 ---
 
 SCAR (Satellite Imagery-Based Calibration for Aerial Recordings) is a framework for long-term calibration refinement of aerial visual-inertial systems.
@@ -19,20 +43,9 @@ SCAR leverages georeferenced satellite imagery and elevation data to establish l
 
 Unlike traditional calibration procedures, SCAR operates without dedicated calibration targets or specific motion patterns, enabling continuous calibration during real-world deployments.
 
-<a class="conference_badge" href="https://openaccess.thecvf.com/content/CVPR2026W/VOCVALC/papers/Holzemann_SCAR_Satellite_Imagery-Based_Calibration_for_Aerial_Recordings_CVPRW_2026_paper.pdf">Accepted at CVPR Workshop (VOCVALC) 2026</a>
-
 ## Abstract
 
 Visual–inertial state estimation depends on stable intrinsic and extrinsic calibration, yet these parameters can drift during long-term aerial deployments. SCAR uses georeferenced satellite imagery and elevation models to derive large-scale 2D–3D correspondences and refine camera intrinsics and camera–INS extrinsics directly from flight data. Evaluations across six campaigns recorded over two years show lower reprojection and localization errors than established calibration baselines, without dedicated calibration maneuvers or manually surveyed control points.
-
-## Resources
-
-<ul class="resource_list">
-  <li><img src="/assets/icons/arxiv.svg" class="resource_icon" alt=""><span class="resource_label">Paper</span><a href="https://arxiv.org/abs/2602.16349">arxiv.org/abs/2602.16349</a></li>
-  <li><img src="/assets/icons/github.svg" class="resource_icon" alt=""><span class="resource_label">Code</span><a href="https://github.com/hlzmnhnry/scar">github.com/hlzmnhnry/scar</a></li>
-  <li><img src="/assets/icons/owncloud.svg" class="resource_icon" alt=""><span class="resource_label">Data</span><a href="https://owncloud.fraunhofer.de/index.php/s/Cf7U6xfx5YHMRSs">owncloud.fraunhofer.de/Cf7U6xfx5YHMRSs</a></li>
-  <li><img src="/assets/icons/poster.svg" class="resource_icon" alt=""><span class="resource_label">Poster</span><a href="{{ '/assets/poster/scar_poster.pdf' | relative_url }}" download>Download poster <span class="file_size">(PDF · 19 MiB)</span></a></li>
-</ul>
 
 ## Citation
 

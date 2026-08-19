@@ -7,9 +7,48 @@ layout: default
 <main class="main container publication-detail" id="main-content">
   <article class="article article--publication typeset">
     <a class="back-link" href="{{ '/publications/' | relative_url }}"><span aria-hidden="true">←</span> All publications</a>
-    <header class="article__header">
+    <header class="paper_header">
       <p class="eyebrow">{{ page.category | default: 'Publication' }} · {{ page.date | date: '%Y' }}</p>
-      <h1>{{ page.title }}</h1>
+      <h1>{{ page.paper_title | default: page.title }}</h1>
+
+      {% if page.authors %}
+        <ul class="paper_authors" aria-label="Authors">
+          {% for author in page.authors %}
+            <li>
+              {% if author.url %}<a href="{{ author.url }}">{% endif %}{{ author.name }}{% if author.url %}</a>{% endif %}{% unless forloop.last %}<span aria-hidden="true">,</span>{% endunless %}
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% if page.venue %}
+        <p class="paper_venue">
+          <span>{{ page.venue }}</span>{% if page.venue_note %}<strong>({{ page.venue_note }})</strong>{% endif %}
+        </p>
+      {% endif %}
+
+      {% if page.resources %}
+        <nav class="paper_resources" aria-label="Publication resources">
+          {% for resource in page.resources %}
+            {% if resource.url %}
+              <a class="paper_resource" href="{{ resource.url }}"{% if resource.download %} download{% endif %}>
+            {% else %}
+              <span class="paper_resource paper_resource--disabled" aria-disabled="true">
+            {% endif %}
+                {% if resource.icon %}<img class="paper_resource__icon" src="{{ resource.icon | relative_url }}" alt="">{% endif %}
+                <span class="paper_resource__copy">
+                  <strong>{{ resource.label }}</strong>
+                  {% if resource.detail %}<small>{{ resource.detail }}</small>{% endif %}
+                </span>
+                {% if resource.url and resource.download != true %}<span class="paper_resource__arrow" aria-hidden="true">↗</span>{% endif %}
+            {% if resource.url %}
+              </a>
+            {% else %}
+              </span>
+            {% endif %}
+          {% endfor %}
+        </nav>
+      {% endif %}
     </header>
     {{ content }}
   </article>

@@ -1,10 +1,36 @@
 ---
 title: "Leaving the City"
+paper_title: "Leaving the City: A Large-Scale Aerial Dataset for Cross-Season Localization in Unstructured Environments"
 date: 2026-06-26
 category: Paper
 image: /assets/ltc_white.png
 image_dark: /assets/ltc_black.png
 interactive_map: true
+authors:
+  - name: "Michael Schleiss"
+  - name: "Henry Hölzemann"
+  - name: "Fahmi Rouatbi"
+  - name: "Torsten Fiolka"
+  - name: "Thomas Pany"
+  - name: "Roger Förstner"
+  - name: "Daniel Cremers"
+venue: "ECCV 2026"
+venue_note: "Poster"
+resources:
+  - label: "Paper"
+    detail: "Coming soon"
+    icon: /assets/icons/arxiv.svg
+  - label: "Code"
+    detail: "GitHub"
+    icon: /assets/icons/github.svg
+    url: "https://github.com/hlzmnhnry/pygeon"
+  - label: "Dataset"
+    detail: "LTC Server"
+    icon: /assets/icons/tum.svg
+    url: "https://ltc.cvg.cit.tum.de/"
+  - label: "Poster"
+    detail: "Coming soon"
+    icon: /assets/icons/poster.svg
 ---
 
 Leaving the City (LTC) is a large-scale aerial dataset for cross-season localization in unstructured environments.
@@ -19,8 +45,6 @@ Leaving the City (LTC) is a large-scale aerial dataset for cross-season localiza
 LTC provides aerial recordings captured across multiple seasons and environmental conditions, targeting robust localization beyond structured urban scenes. The dataset focuses on challenging unstructured environments such as forests, fields, rural areas, and repetitive natural landscapes, where visual localization is particularly difficult.
 
 The dataset includes multiple flight sequences together with calibration data, sensor metadata, aerial imagery, semantic coverage information, and land-cover annotations.
-
-<span class="conference_badge">Accepted at ECCV 2026</span>
 
 ## Dataset at a glance
 
@@ -123,23 +147,7 @@ To address this, we introduce *Leaving the City*, the first large-scale aerial b
 
 Evaluating state-of-the-art matchers through our terrain-stratified protocol reveals a systematic bias: methods that succeed on man-made surfaces degrade sharply over natural terrain undergoing strong appearance change. By exposing where current methods fail, our benchmark provides a rigorous foundation for developing robust, all-terrain aerial localization. The dataset and code are publicly available.
 
-## Resources
-
-To help you understand and work with our dataset, we provide the following resources:
-
-<ul class="resource_list">
-  <li><img src="/assets/icons/github.svg" class="resource_icon" alt=""><span class="resource_label">Code</span><a href="https://github.com/hlzmnhnry/pygeon">github.com/hlzmnhnry/pygeon</a></li>
-  <li><img src="/assets/icons/tum.svg" class="resource_icon" alt=""><span class="resource_label">Dataset</span><a href="https://ltc.cvg.cit.tum.de/">ltc.cvg.cit.tum.de</a></li>
-  <li><img src="/assets/icons/arxiv.svg" class="resource_icon" alt=""><span class="resource_label">Paper</span><em>Coming soon</em></li>
-</ul>
-
 For questions, download problems, or issues with the dataset, please open an issue in the <a href="https://github.com/hlzmnhnry/pygeon/issues">Pygeon repository</a>.
-
-## Citation
-
-<div class="citation_card citation_card--pending">
-  <p>Coming soon.</p>
-</div>
 
 ## Dataset Download
 
@@ -658,3 +666,9 @@ wget --mirror --no-parent --no-host-directories \
 </ul>
 
 </details>
+
+## Citation
+
+<div class="citation_card citation_card--pending">
+  <p>Coming soon.</p>
+</div>

@@ -52,5 +52,8 @@
     {% if page.interactive_matching %}
       <script src="{{ '/assets/ltc-matching.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
     {% endif %}
+    {% if page.embedded_video %}
+      <script src="{{ '/assets/local-video.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+    {% endif %}
   </body>
 </html>

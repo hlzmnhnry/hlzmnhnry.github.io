@@ -7,6 +7,7 @@ image: /assets/ltc_white.png
 image_dark: /assets/ltc_black.png
 interactive_map: true
 interactive_matching: true
+embedded_video: true
 authors:
   - name: "Michael Schleiss"
   - name: "Henry Hölzemann"
@@ -46,6 +47,19 @@ Leaving the City (LTC) is a large-scale aerial dataset for cross-season localiza
 LTC provides aerial recordings captured across multiple seasons and environmental conditions, targeting robust localization beyond structured urban scenes. The dataset focuses on challenging unstructured environments such as forests, fields, rural areas, and repetitive natural landscapes, where visual localization is particularly difficult.
 
 The dataset includes multiple flight sequences together with calibration data, sensor metadata, aerial imagery, semantic coverage information, and land-cover annotations.
+
+## Video overview
+
+<figure class="paper_video">
+  <div class="paper_video__frame">
+    <video controls preload="metadata" playsinline data-local-video poster="{{ '/assets/ltc/video/ltc-eccv-poster.jpg' | relative_url }}" aria-label="One-minute overview of the Leaving the City dataset">
+      <source src="{{ '/assets/ltc/video/ltc-eccv-final.mp4' | relative_url }}?v={{ site.time | date: '%s' }}" type="video/mp4">
+      Your browser does not support embedded MP4 video. <a href="{{ '/assets/ltc/video/ltc-eccv-final.mp4' | relative_url }}">Download the video instead</a>.
+    </video>
+    <p class="paper_video__loading" data-local-video-status hidden>Preparing local video preview…</p>
+  </div>
+  <figcaption>A one-minute overview of LTC, its seasonal coverage, georeferenced recordings, and terrain-stratified localization evaluation.</figcaption>
+</figure>
 
 ## Dataset at a glance
 

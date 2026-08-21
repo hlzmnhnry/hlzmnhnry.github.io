@@ -705,6 +705,48 @@ summary:focus-visible {
   margin: 0;
 }
 
+.paper_video {
+  margin: 28px 0 34px;
+}
+
+.paper_video__frame {
+  position: relative;
+  overflow: hidden;
+  background: #080808;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+}
+
+.paper_video video {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  background: #080808;
+}
+
+.typeset .paper_video__loading {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  background: rgba(8, 8, 8, .72);
+  color: #fff;
+  font-size: .78rem;
+  letter-spacing: .02em;
+}
+
+.typeset .paper_video__loading[hidden] {
+  display: none;
+}
+
+.typeset .paper_video figcaption {
+  margin-top: 10px;
+  color: var(--text-faint);
+  font-size: .7rem;
+  line-height: 1.55;
+}
+
 .typeset code {
   padding: .15em .35em;
   background: var(--surface-raised);

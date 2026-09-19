@@ -20,8 +20,9 @@ venue: "ECCV 2026"
 venue_note: "Poster"
 resources:
   - label: "Paper"
-    detail: "Coming soon"
-    icon: /assets/icons/arxiv.svg
+    detail: "Springer"
+    icon: /assets/icons/springer.svg
+    url: "https://link.springer.com/chapter/10.1007/978-3-032-37261-1_7"
   - label: "Code"
     detail: "GitHub"
     icon: /assets/icons/github.svg
@@ -740,6 +741,20 @@ wget --mirror --no-parent --no-host-directories \
 
 ## Citation
 
-<div class="citation_card citation_card--pending">
-  <p>Coming soon.</p>
+<div class="citation_card">
+  <p class="citation_card__entry"><strong>Michael Schleiss, Henry Hölzemann, Fahmi Rouatbi, Torsten Fiolka, Thomas Pany, Roger Förstner, and Daniel Cremers.</strong> “Leaving the City: A Large-Scale Aerial Dataset for Cross-Season Localization in Unstructured Environments.” In <em>Computer Vision – ECCV 2026</em>, pp. 96–113. Springer, 2026.</p>
+  <details class="citation_card__bibtex">
+    <summary>Show BibTeX</summary>
+    <div class="citation_card__code">
+      <button class="citation_copy" type="button" data-copy-target="citation-ltc">Copy</button>
+      <pre id="citation-ltc"><code>@InProceedings{Schleiss_2026_ECCV,
+  author    = {Schleiss, Michael and H\"olzemann, Henry and Rouatbi, Fahmi and Fiolka, Torsten and Pany, Thomas and F\"orstner, Roger and Cremers, Daniel},
+  title     = {Leaving the City: A Large-Scale Aerial Dataset for Cross-Season Localization in Unstructured Environments},
+  booktitle = {Computer Vision -- ECCV 2026},
+  year      = {2026},
+  publisher = {Springer},
+  pages     = {96--113}
+}</code></pre>
+    </div>
+  </details>
 </div>

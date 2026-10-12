@@ -153,7 +153,7 @@ The two repeatedly flown routes can be inspected together or individually. Selec
   <noscript><p class="route_explorer__status">JavaScript is required to use the interactive route viewer.</p></noscript>
 </div>
 
-<p class="route_explorer__source">Satellite background: <a href="https://sgx.geodatenzentrum.de/wms_sentinel2_de">Sentinel2-DE RGB (2019)</a> — European Union, contains Copernicus Sentinel-2 data 2019, processed by the Bundesamt für Kartographie und Geodäsie (BKG). Land-cover background: <a href="https://sgx.geodatenzentrum.de/wms_clc5_2018">CORINE Land Cover – 5ha (2018)</a>, © BKG 2026, licensed under <a href="https://www.govdata.de/dl-de/by-2-0">dl-de/by-2.0</a>.</p>
+<p class="route_explorer__source">Satellite background: <a href="https://sgx.geodatenzentrum.de/wms_sentinel2_de">Sentinel2-DE RGB (2019)</a> — European Union, contains Copernicus Sentinel-2 data 2019, processed by the Bundesamt für Kartographie und Geodäsie (BKG). Land-cover background: <a href="https://sgx.geodatenzentrum.de/wms_clc5_2018">CORINE Land Cover – 5ha (2018)</a>, © GeoBasis-DE / <a href="https://www.bkg.bund.de">BKG</a> (2026), <a href="https://www.govdata.de/dl-de/by-2-0">dl-de/by-2-0</a>.</p>
 
 ## Abstract
 
@@ -243,7 +243,7 @@ For questions, download problems, or issues with the dataset, please open an iss
 
 The LTC dataset is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License (CC BY 4.0)</a>, © 2026 Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V., represented by Fraunhofer FKIE (see <a href="https://ltc.cvg.cit.tum.de/LICENSE.txt">LICENSE.txt</a>).
 You may share and adapt the data for any purpose, including commercially, provided that you cite the <a href="#citation">paper</a> and indicate if changes were made.
-The land-cover masks are derived from CORINE Land Cover 2018 (© European Union, Copernicus Land Monitoring Service 2018, European Environment Agency).
+The land-cover masks are derived from CORINE Land Cover 5 ha, 2018 (CLC5-2018): © GeoBasis-DE / <a href="https://www.bkg.bund.de">BKG</a> (2025), <a href="https://www.govdata.de/dl-de/by-2-0">dl-de/by-2-0</a>; modified: rasterized into masks aligned with the camera images.
 The code in <a href="https://github.com/hlzmnhnry/pygeon">pygeon</a> is released under the MIT License.
 
 ### Download the complete dataset

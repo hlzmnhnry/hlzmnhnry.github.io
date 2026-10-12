@@ -239,6 +239,13 @@ Individual download links are provided at the bottom of this page.
 
 For questions, download problems, or issues with the dataset, please open an issue in the <a href="https://github.com/hlzmnhnry/pygeon/issues">Pygeon repository</a>.
 
+### License
+
+The LTC dataset is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License (CC BY 4.0)</a>, © 2026 Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V., represented by Fraunhofer FKIE (see <a href="https://ltc.cvg.cit.tum.de/LICENSE.txt">LICENSE.txt</a>).
+You may share and adapt the data for any purpose, including commercially, provided that you cite the <a href="#citation">paper</a> and indicate if changes were made.
+The land-cover masks are derived from CORINE Land Cover 2018 (© European Union, Copernicus Land Monitoring Service 2018, European Environment Agency).
+The code in <a href="https://github.com/hlzmnhnry/pygeon">pygeon</a> is released under the MIT License.
+
 ### Download the complete dataset
 
 ```bash
